@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>..:: MULLIGAN ::..</title>
+  <meta name="description" content="World's finance view">
+  <link rel="stylesheet" type="text/css" href="mulligan.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.1/d3.min.js"></script>
+  <script type="text/javascript">
+    "use strict";
+
+    function entity(character) {
+      return `&#${character.charCodeAt(0).toString()};`;
+    }
+
+    function createHTMLElement(html) {
+      var template = document.createElement("template");
+      html = html.trim();
+      template.innerHTML = html;
+      return template.content.firstChild;
+    }
+
+    function appendFedAssetsItem(item, index, arr) {
+      const html_item = createHTMLElement(item);
+      document.getElementById("fed-assets-items").appendChild(html_item);
+    }
+
+    function swatches({
+      color,
+      marginLeft = 0
+    }) {
+      var eles = color.domain().map(value => {
+        const label = value;
+        return `<div class="fed-assets-item">
+      <div class="fed-assets-swatch" style="background:${color(value)};"></div>
+      <div class="fed-assets-label" title="${label.replace(/["&]/g, entity)}">${label}</div>
+    </div>`;
+      });
+
+
+      eles.forEach(appendFedAssetsItem);
+    }
+
+    function chart(width, height, series, color, area, xAxis, yAxis) {
+      const svg = d3.create("svg").attr("viewBox", [0, 0, width, height]);
+
+      svg.append("g")
+        .selectAll("path")
+        .data(series)
+        .join("path")
+        .attr("fill", ({ key }) => color(key))
+        .attr("d", area)
+        .append("title")
+        .text(({ key }) => key);
+
+      svg.append("g").call(xAxis);
+
+      svg.append("g").call(yAxis);
+
+      return svg.node();
+    }
+
+    function main() {
+      d3.csv('tmp/observations.csv')
+        .then(function (data) {
+          var data = Object.assign(data, {y: "Millions USD"});
+          console.log(data);
+
+          var colors = d3.scaleOrdinal(data.columns.slice(1), d3.schemePaired);
+          swatches({
+            color: colors
+          });
+
+          const margin = ({ top: 20, right: 30, bottom: 30, left: 80 });
+
+          const height = 500;
+          const width = 958;
+
+          const series = d3.stack().keys(data.columns.slice(1))(data);
+          console.log(series);
+
+          var xRange = d3.extent(data, d => d.date);
+          var xDateRange = [new Date(xRange[0]), new Date(xRange[1])];
+          console.log(xDateRange);
+          var x = d3.scaleUtc()
+            .domain(xDateRange)
+            .range([margin.left, width - margin.right]);
+          console.log(x);
+
+          console.log(d3.max(series, d => d3.max(d, d => d[1])));
+          var y = d3.scaleLinear()
+            .domain([0, d3.max(series, d => d3.max(d, d => d[1]))])
+            .nice()
+            .range([height - margin.bottom, margin.top]);
+          console.log(y);
+
+          var area = d3.area()
+            .x(d => x(new Date(d.data.date)))
+            .y0(d => y(d[0]))
+            .y1(d => y(d[1]));
+          console.log(x("2018-12-18"));
+          console.log(y(0));
+          console.log(area(series[0]));
+
+          var xAxis = g => g
+            .attr("transform", `translate(0,${height - margin.bottom})`)
+            .call(d3.axisBottom(x).ticks(width / 80).tickSizeOuter(0));
+
+          var yAxis = g => g
+            .attr("transform", `translate(${margin.left},0)`)
+            .call(d3.axisLeft(y))
+            .call(g => g.select(".domain").remove())
+            .call(g => g.select(".tick:last-of-type text").clone()
+              .attr("x", 3)
+              .attr("text-anchor", "start")
+              .attr("font-weight", "bold")
+              .text(data.y));
+
+          const svgChart = chart(width, height, series, colors, area, xAxis, yAxis);
+          document.getElementById("chart").appendChild(svgChart);
+        })
+        .catch(function (error) {
+          console.error(error);
+        })
+
+
+    }
+  </script>
+</head>
+
+<body onload="main();">
+  <div style="display: flex; align-items: center; margin-left: 0px; min-height: 33px; font: 10px sans-serif;">
+    <div id="fed-assets-items" style="width: 100%; columns: 180px;"></div>
+  </div>
+  <div id="chart"></div>
+</body>
+
+</html>
+

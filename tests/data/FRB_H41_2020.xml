@@ -1,0 +1,1751 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>  <message:MessageGroup xmlns:message="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message"  xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/common"  xmlns:frb="http://www.federalreserve.gov/structure/compact/common"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message SDMXMessage.xsd http://www.federalreserve.gov/structure/compact/common frb_common.xsd"><message:Header xmlns:message="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message">
+    <message:ID>H41</message:ID>
+    <message:Test>false</message:Test>
+    <message:Name>Factors Affecting Reserve Balances (H.4.1)</message:Name>
+    <message:Prepared>2020-05-28T14:27:09Z</message:Prepared>
+    <message:Sender id="FRB">
+      <message:Name>Federal Reserve Board</message:Name>
+      <message:Contact>
+        <message:Name>Elizabeth Klee</message:Name>
+        <message:Telephone>202-721-4501</message:Telephone>
+        <message:Email>MA-MRA-H41@frb.gov</message:Email>
+      </message:Contact>
+    </message:Sender>
+  </message:Header>
+<frb:DataSet id="H41" xmlns:kf="http://www.federalreserve.gov/structure/compact/H41_H41" xsi:schemaLocation="http://www.federalreserve.gov/structure/compact/H41_H41 H41_H41.xsd"  > 
+<kf:Series SERIES_NAME="H0.RESFSCB_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="DORBSC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Other Factors Draining Reserve Balances: Deposits with F.R. Banks, other than reserve balances: Service-related: Required clearing balances: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Other Factors Draining Reserve Balances: Deposits with F.R. Banks, other than reserve balances: Service-related: Required clearing balances: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESH4AAPA_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="DORBSF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Other Factors Draining Reserve Balances: Deposits with F.R. Banks, other than reserve balances: Service-related: Adjustments to compensate for float: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Other Factors Draining Reserve Balances: Deposits with F.R. Banks, other than reserve balances: Service-related: Adjustments to compensate for float: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPAAAAAI_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="PI" COMPONENT="PIAAA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Preferred Interests: Preferred interests in AIA Aurora LLC and ALICO Holdings LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Preferred Interests: Preferred interests in AIA Aurora LLC and ALICO Holdings LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPAACH_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="NPHCPFF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Net portfolio holdings of Commercial Paper Funding Facility LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Net portfolio holdings of Commercial Paper Funding Facility LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPAAMMIH_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="NPHMIFF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Net portfolio holdings of LLCs funded through the Money Market Investor Funding Facility: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Net portfolio holdings of LLCs funded through the Money Market Investor Funding Facility: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPAATALH_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="NPHTALF" COMPONENT="TALF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Net Portfolio Holdings of TALF LLC: Net portfolio holdings of TALF LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Net Portfolio Holdings of TALF LLC: Net portfolio holdings of TALF LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPALDD_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNPDCF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Loans: Primary dealer and other broker-dealer credit (Through 2010-02-03): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Loans: Primary dealer and other broker-dealer credit (Through 2010-02-03): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPALDF_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNALMF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Loans: Asset-Backed Commercial Paper Money Market Mutual Fund Liquidity Facility (Through 2010-02-03): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Loans: Asset-Backed Commercial Paper Money Market Mutual Fund Liquidity Facility (Through 2010-02-03): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPALDG_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNAIG" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Loans: Credit extended to American International Group, Inc., Net: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Loans: Credit extended to American International Group, Inc., Net: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPLLA_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="ADAIG" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Liabilities: Funds from American International Group, Inc. asset dispositions, held as agent: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Liabilities: Funds from American International Group, Inc. asset dispositions, held as agent: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPLLDDS_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="DORBS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Other Factors Draining Reserve Balances: Deposits with F.R. Banks, other than reserve balances: Service-related: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Other Factors Draining Reserve Balances: Deposits with F.R. Banks, other than reserve balances: Service-related: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPLLDS_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEPUSTS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: U.S. Treasury, Supplementary Financing Account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: U.S. Treasury, Supplementary Financing Account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4A_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="FARF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Total factors, other than reserve balances, absorbing reserve funds: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Total factors, other than reserve balances, absorbing reserve funds: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3539660" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3604279" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3719306" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3781620" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3828162" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4AO_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="OLC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Other liabilities and capital: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Other liabilities and capital: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="63116" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="64080" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="60005" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="50537" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="47074" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4E_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="TCCF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Treasury Contribution to Credit Facilities (Effective 2020-05-07): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Treasury Contribution to Credit Facilities (Effective 2020-05-07): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="47500" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="49000" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="66500" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4R_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="RBFRB" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Reserve balances with Federal Reserve Banks: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Reserve balances with Federal Reserve Banks: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3163512" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3165605" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3263431" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3304221" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3317688" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4S_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="FSRF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Total factors supplying reserve funds: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Total factors supplying reserve funds: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6703172" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6769884" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6982738" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="7085841" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="7145850" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4SC_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="RBC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Reserve Bank credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Reserve Bank credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6616131" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6682832" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6895709" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6998687" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="7058713" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4SCF_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="FLT" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Float: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Float: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-1397" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-241" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-239" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-209" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-288" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4SCS_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="SWAP" COMPONENT="CBL" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Central Bank Liquidity Swaps: Central bank liquidity swaps: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Central Bank Liquidity Swaps: Central bank liquidity swaps: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="438953" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="444885" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="440934" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="446103" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="448946" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4SO_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="OFRA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Other Federal Reserve assets: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Other Federal Reserve assets: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="37956" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="39271" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="42599" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="27841" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="28687" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPA_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="TA" COMPONENT="TA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Total Assets: Total assets: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Total Assets: Total assets: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6655929" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6721420" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6934227" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="7037258" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="7097316" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAB_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="CCF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Corporate Credit Facilities LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Corporate Credit Facilities LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="305" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1801" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="34853" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAC2H_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNCPFF2" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Net portfolio holdings of Commercial Paper Funding Facility II LLC (Post 2020-04-14): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Net portfolio holdings of Commercial Paper Funding Facility II LLC (Post 2020-04-14): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3372" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3988" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4292" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4293" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12794" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAC2MC_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNCPFF2" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Commercial paper held by Commercial Paper Funding Facility LLC, face value: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Commercial paper held by Commercial Paper Funding Facility LLC, face value: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3347" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3948" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4255" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4255" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4255" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAC2MCD15_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNCPFF2" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Commercial paper held by Commercial Paper Funding Facility LLC, Maturing within 15 days: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Commercial paper held by Commercial Paper Funding Facility LLC, Maturing within 15 days: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAC2MCD16T90_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNCPFF2" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Commercial paper held by Commercial Paper Funding Facility LLC, Maturing within 16 days to 90 days: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Commercial paper held by Commercial Paper Funding Facility LLC, Maturing within 16 days to 90 days: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3347" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3948" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4255" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4255" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4255" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAC2MCY01_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNCPFF2" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Commercial paper held by Commercial Paper Funding Facility LLC, Maturing within 91 days to 1 year: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Commercial paper held by Commercial Paper Funding Facility LLC, Maturing within 91 days to 1 year: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAD_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="MUNI" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Municipal Liquidity Facility LLC (Effective 2020-05-26): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Municipal Liquidity Facility LLC (Effective 2020-05-26): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAML1H_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="NPHML" COMPONENT="ML" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Net Portfolio Holdings of Maiden Lane LLCs: Net portfolio holdings of Maiden Lane LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Net Portfolio Holdings of Maiden Lane LLCs: Net portfolio holdings of Maiden Lane LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAML2H_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="NPHML" COMPONENT="MLII" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Net Portfolio Holdings of Maiden Lane LLCs: Net portfolio holdings of Maiden Lane II LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Net Portfolio Holdings of Maiden Lane LLCs: Net portfolio holdings of Maiden Lane II LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAML3H_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="NPHML" COMPONENT="MLIII" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Net Portfolio Holdings of Maiden Lane LLCs: Net portfolio holdings of Maiden Lane III LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Net Portfolio Holdings of Maiden Lane LLCs: Net portfolio holdings of Maiden Lane III LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAC_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="CN" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Coin: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Coin: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1598" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1557" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1509" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1478" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1447" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAE_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="OARS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Other Assets, Reserve Bank Table (post 2020-03-14): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Other Assets, Reserve Bank Table (post 2020-03-14): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="37998" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="39302" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="42648" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="27892" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="28754" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAG_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="GCA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Gold certificate account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Gold certificate account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11037" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11037" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11037" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11037" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11037" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAI_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="IPC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Items in process of collection: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Items in process of collection: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="41" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="30" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="49" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="51" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="67" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAL_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="SRPTACOL" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Securities, premiums, discounts, repurchase agreements, and loans: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Securities, premiums, discounts, repurchase agreements, and loans: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6137246" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6194928" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6407819" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6518859" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6533722" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALD_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LN" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="123028" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="113342" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="114927" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="108577" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="106896" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDB_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNALMF2" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Money Market Mutual Fund Liquidity Facility (Post 2020-03-18): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Money Market Mutual Fund Liquidity Facility (Post 2020-03-18): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="46277" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="42763" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="39820" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="36449" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="33244" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDC_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNCE" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Other credit extensions: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Other credit extensions: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDH_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNPDCF2" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Primary dealer credit facility (Post 2020-03-17): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Primary dealer credit facility (Post 2020-03-17): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="25504" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="14903" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="10288" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="7501" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6241" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDJ_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNPPPLF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Payroll Protection Program Liquidity Facility: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Payroll Protection Program Liquidity Facility: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="19488" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="29181" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="40580" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="45090" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="49211" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDP_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNPC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Primary credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Primary credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="31759" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="26494" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="24239" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="19535" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="18198" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDQ_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNSC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Secondary credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Secondary credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDS_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNSEAC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Seasonal credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Seasonal credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDT_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNTALF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Term Asset-Backed Securities Loan Facility: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Term Asset-Backed Securities Loan Facility: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDV_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans (Calculated): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans (Calculated): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="123028" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="113342" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="114927" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="108577" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="106896" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALG_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="SHOR" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: Securities held outright: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: Securities held outright: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5578486" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5627918" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5843376" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5954518" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5946969" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGAM_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="FADS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: Federal agency debt securities: All: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: Federal agency debt securities: All: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2347" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2347" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2347" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2347" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2347" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGAO_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="FADS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: Federal agency debt securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: Federal agency debt securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2347" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2347" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2347" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2347" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2347" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGASMO_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="MBSSHOR" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: Mortgage-backed securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: Mortgage-backed securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1604720" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1605380" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1783761" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1862841" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1835110" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGASMR_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="RMSSHOR" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets : Securities Held Outright: Residential mortgage-backed securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets : Securities Held Outright: Residential mortgage-backed securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1597206" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1597206" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1775151" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1853985" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1826212" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGASMS_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="CMSSHOR" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets : Securities Held Outright: Commercial mortgage-backed securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets : Securities Held Outright: Commercial mortgage-backed securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="7514" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8174" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8610" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8856" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8898" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGTR_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="RP" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Repurchase agreements: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Repurchase agreements: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="158202" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="172700" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="157354" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="157351" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="181101" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGTRF_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="RPF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Repurchase agreements - Foreign official: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Repurchase agreements - Foreign official: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1404" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGTRO_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="RPD" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Repurchase agreements - Others: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Repurchase agreements - Others: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="158200" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="172700" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="155950" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="157350" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="181100" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGUM_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="USTS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: All: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: All: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3971419" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4020191" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4057268" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4089331" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4109512" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGUO_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="USTS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3971419" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4020191" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4057268" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4089331" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4109512" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGUOB_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="USTSB" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Bills: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Bills: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="326044" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="326044" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="326044" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="326044" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="326044" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGUOMC_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="USTSIC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Inflation compensation: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Inflation compensation: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="36038" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="36365" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="36592" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="36797" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="36843" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGUOMI_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="USTSNBI" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Notes and bonds, inflation-indexed: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Notes and bonds, inflation-indexed: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="242290" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="248266" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="252016" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="255266" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="257451" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGUOMN_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="USTSNBN" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Notes and bonds, nominal: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Notes and bonds, nominal: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3367047" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3409516" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3442616" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3471224" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3489174" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGUON_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="USTSNB" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Notes and bonds: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Notes and bonds: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3645375" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3694147" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3731224" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3763287" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3783468" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALSD_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="DISCSHOR" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Unamortized discounts on securities held outright: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Unamortized discounts on securities held outright: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-5711" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-5534" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-5354" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-5691" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-5500" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALSP_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="PREMSHOR" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Unamortized premiums on securities held outright: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Unamortized premiums on securities held outright: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="283240" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="286502" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="297516" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="304104" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="304256" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALT_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="TAC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Term auction credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Term auction credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAN_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="IDSA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Interdistrict settlement account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Interdistrict settlement account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAO_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="OA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Other Assets, Consolidated Table: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Other Assets, Consolidated Table: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="35749" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="37069" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="40394" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="25635" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="26482" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAOF_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="FCDA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Foreign currency denominated assets: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Foreign currency denominated assets: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="20525" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="20521" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="20484" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="20595" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="20564" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAP_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="BP" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Bank premises: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Bank premises: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2208" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2203" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2205" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2206" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2205" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAR_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="GCA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Gold certificate and SDR certificate account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Gold certificate and SDR certificate account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="16237" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="16237" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="16237" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="16237" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="16237" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAS_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="SDRCA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Special drawing rights certificate account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Special drawing rights certificate account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5200" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5200" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5200" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5200" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5200" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPL_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="TLC" COMPONENT="TLC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Total Liabilities and Capital: Total Liabilities and Capital: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Total Liabilities and Capital: Total Liabilities and Capital: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6655929" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6721420" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6934227" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="7037258" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="7097316" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLC_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="CAP" COMPONENT="TC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Capital: Total capital: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Capital: Total capital: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="38838" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="38871" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="38891" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="38894" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="38914" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLCP_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="CAP" COMPONENT="CPI" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Capital: Capital paid in: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Capital: Capital paid in: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="32013" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="32046" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="32066" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="32069" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="32089" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLCS_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="CAP" COMPONENT="SUR" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Capital: Surplus: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Capital: Surplus: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6825" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6825" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6825" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6825" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6825" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLCU_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="CAP" COMPONENT="OC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Capital: Other capital accounts: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Capital: Other capital accounts: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLL_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="TL" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Total liabilities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Total liabilities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6617091" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6682549" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6895336" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6998365" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="7058402" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLB_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="DORB" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Deposits with F.R. Banks, other than reserve balances: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Deposits with F.R. Banks, other than reserve balances: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1296625" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1352933" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1400534" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1476591" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1522210" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLC_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DACI" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deferred availability cash items: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deferred availability cash items: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1438" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="272" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="288" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="261" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="355" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLD_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEP" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4460138" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4518539" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4663966" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4780812" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4839897" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLDA_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEPTDF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: Term deposits held by depository institutions: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: Term deposits held by depository institutions: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLDD_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEPDI" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits: Other deposits held by depository institutions: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits: Other deposits held by depository institutions: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3163513" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3165606" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3263431" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3304221" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3317688" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLDE_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEPTDF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: Deposits held by depository institutions: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: Deposits held by depository institutions: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3163513" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3165606" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3263431" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3304221" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3317688" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLDF_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEPZF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: Foreign official: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: Foreign official: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="16323" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="16336" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="16328" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="16228" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="16251" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLDO_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEPZO" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits: Other: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits: Other: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="204070" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="193329" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="246034" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="267066" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="179062" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLDT_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEPUSTG" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: U.S. Treasury, General Account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: U.S. Treasury, General Account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1076232" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1143268" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1138172" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1193297" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1326897" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLE_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="OLAD" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Other liabilities and accrued dividends AND Total deferred credit items: Wednesday level (Post 2020-03-11)</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Other liabilities and accrued dividends AND Total deferred credit items: Wednesday level (Post 2020-03-11)</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="23784" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="23451" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="19307" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="10374" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="7355" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLN_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="FRNN" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Federal Reserve notes, net of F.R. Bank holdings: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Federal Reserve notes, net of F.R. Bank holdings: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1862131" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1873325" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1881319" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1890000" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1899514" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLNH_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="FRNHFRB" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Notes held by F.R. Banks (netted from Federal Reserve notes outstanding): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Notes held by F.R. Banks (netted from Federal Reserve notes outstanding): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="159974" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="154771" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="157076" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="158022" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="151911" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLNO_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="FRNOS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Federal Reserve notes outstanding: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Federal Reserve notes outstanding: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2022105" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2028096" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2038395" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2048021" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2051425" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLO_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="OLADRIF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Other liabilities and accrued dividends (Includes the liability for earnings remittances due to the U.S. Treasury): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Other liabilities and accrued dividends (Includes the liability for earnings remittances due to the U.S. Treasury): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="24279" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="25208" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="21114" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11644" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8160" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLOO_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="OLAD" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Other liabilities and accrued dividends: Wednesday level (Through 2020-03-11)</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Other liabilities and accrued dividends: Wednesday level (Through 2020-03-11)</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="NA" OBS_VALUE="-999999" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLOP_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="RIF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Earnings remittances due to the U.S. Treasury: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Earnings remittances due to the U.S. Treasury: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1933" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2029" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2095" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1530" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1160" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLR_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="RRP" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Reverse repurchase agreements: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Reverse repurchase agreements: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="269106" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="265206" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="281150" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="266649" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="243976" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLRD_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="RRPO" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Reverse repurchase agreements: Others: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Reverse repurchase agreements: Others: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1450" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1175" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="13825" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9726" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4326" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLRF_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="RRPF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Reverse repurchase agreements: Foreign official and international accounts: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Reverse repurchase agreements: Foreign official and international accounts: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="267656" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="264031" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="267325" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="256923" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="239650" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPMLLDO_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEPZO" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: Other: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: Other: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="204070" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="193329" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="246034" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="267066" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="179062" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESTBC_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="CIC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Currency in circulation: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Currency in circulation: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1910511" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1921765" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1929840" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1938599" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1948196" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESTBHT_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="TCH" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Treasury cash holdings: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Treasury cash holdings: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="301" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="296" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="277" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="245" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="207" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESTBMG_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="GS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Gold stock: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Gold stock: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11041" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11041" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11041" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11041" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11041" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESTBMT_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="TCO" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Treasury currency outstanding: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Treasury currency outstanding: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="50275" TIME_PERIOD="2020-04-29" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="50289" TIME_PERIOD="2020-05-06" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="50303" TIME_PERIOD="2020-05-13" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="50317" TIME_PERIOD="2020-05-20" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="50331" TIME_PERIOD="2020-05-27" />
+</kf:Series>
+</frb:DataSet>
+</message:MessageGroup>

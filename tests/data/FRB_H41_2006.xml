@@ -1,0 +1,2261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>  <message:MessageGroup xmlns:message="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message"  xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/common"  xmlns:frb="http://www.federalreserve.gov/structure/compact/common"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message SDMXMessage.xsd http://www.federalreserve.gov/structure/compact/common frb_common.xsd"><message:Header xmlns:message="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message">
+    <message:ID>H41</message:ID>
+    <message:Test>false</message:Test>
+    <message:Name>Factors Affecting Reserve Balances (H.4.1)</message:Name>
+    <message:Prepared>2020-05-28T14:27:09Z</message:Prepared>
+    <message:Sender id="FRB">
+      <message:Name>Federal Reserve Board</message:Name>
+      <message:Contact>
+        <message:Name>Elizabeth Klee</message:Name>
+        <message:Telephone>202-721-4501</message:Telephone>
+        <message:Email>MA-MRA-H41@frb.gov</message:Email>
+      </message:Contact>
+    </message:Sender>
+  </message:Header>
+<frb:DataSet id="H41" xmlns:kf="http://www.federalreserve.gov/structure/compact/H41_H41" xsi:schemaLocation="http://www.federalreserve.gov/structure/compact/H41_H41 H41_H41.xsd"  > 
+<kf:Series SERIES_NAME="H0.RESFSCB_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="DORBSC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Other Factors Draining Reserve Balances: Deposits with F.R. Banks, other than reserve balances: Service-related: Required clearing balances: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Other Factors Draining Reserve Balances: Deposits with F.R. Banks, other than reserve balances: Service-related: Required clearing balances: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8649" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9374" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9371" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8710" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8710" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8472" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8472" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8015" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8015" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8143" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESH4AAPA_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="DORBSF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Other Factors Draining Reserve Balances: Deposits with F.R. Banks, other than reserve balances: Service-related: Adjustments to compensate for float: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Other Factors Draining Reserve Balances: Deposits with F.R. Banks, other than reserve balances: Service-related: Adjustments to compensate for float: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPAAAAAI_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="PI" COMPONENT="PIAAA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Preferred Interests: Preferred interests in AIA Aurora LLC and ALICO Holdings LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Preferred Interests: Preferred interests in AIA Aurora LLC and ALICO Holdings LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPAACH_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="NPHCPFF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Net portfolio holdings of Commercial Paper Funding Facility LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Net portfolio holdings of Commercial Paper Funding Facility LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPAAMMIH_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="NPHMIFF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Net portfolio holdings of LLCs funded through the Money Market Investor Funding Facility: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Net portfolio holdings of LLCs funded through the Money Market Investor Funding Facility: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPAATALH_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="NPHTALF" COMPONENT="TALF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Net Portfolio Holdings of TALF LLC: Net portfolio holdings of TALF LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Net Portfolio Holdings of TALF LLC: Net portfolio holdings of TALF LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPALDD_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNPDCF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Loans: Primary dealer and other broker-dealer credit (Through 2010-02-03): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Loans: Primary dealer and other broker-dealer credit (Through 2010-02-03): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPALDF_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNALMF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Loans: Asset-Backed Commercial Paper Money Market Mutual Fund Liquidity Facility (Through 2010-02-03): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Loans: Asset-Backed Commercial Paper Money Market Mutual Fund Liquidity Facility (Through 2010-02-03): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPALDG_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNAIG" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Loans: Credit extended to American International Group, Inc., Net: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Loans: Credit extended to American International Group, Inc., Net: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPLLA_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="ADAIG" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Liabilities: Funds from American International Group, Inc. asset dispositions, held as agent: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Liabilities: Funds from American International Group, Inc. asset dispositions, held as agent: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPLLDDS_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="DORBS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Other Factors Draining Reserve Balances: Deposits with F.R. Banks, other than reserve balances: Service-related: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Other Factors Draining Reserve Balances: Deposits with F.R. Banks, other than reserve balances: Service-related: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8649" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9374" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9371" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8710" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8710" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8472" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8472" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8015" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8015" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8143" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="H0.RESPPLLDS_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEPUSTS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: U.S. Treasury, Supplementary Financing Account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: U.S. Treasury, Supplementary Financing Account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4A_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="FARF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Total factors, other than reserve balances, absorbing reserve funds: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Total factors, other than reserve balances, absorbing reserve funds: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="861130" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="853009" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="853066" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="846864" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="849393" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="850759" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="853874" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="855943" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="857472" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="856951" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4AO_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="OLC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Other liabilities and capital: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Other liabilities and capital: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="28251" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="28487" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="28174" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="28514" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="28092" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="28259" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="28628" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="28758" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="28964" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="29032" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4E_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="TCCF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Treasury Contribution to Credit Facilities (Effective 2020-05-07): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Treasury Contribution to Credit Facilities (Effective 2020-05-07): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4R_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="RBFRB" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Reserve balances with Federal Reserve Banks: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Reserve balances with Federal Reserve Banks: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="17470" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5039" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9348" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11303" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="10466" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5937" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11524" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12703" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11961" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4117" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4S_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="FSRF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Total factors supplying reserve funds: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Total factors supplying reserve funds: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="878600" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="858049" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="862414" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="858167" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="859860" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="856696" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="865398" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="868646" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="869433" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="861068" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4SC_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="RBC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Reserve Bank credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Reserve Bank credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="809549" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="788783" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="793291" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="788909" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="790890" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="787604" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="795977" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="798921" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="799229" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="790950" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4SCF_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="FLT" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Float: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Float: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2406" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="935" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4608" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-782" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1050" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="875" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-629" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2525" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1341" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1141" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4SCS_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="SWAP" COMPONENT="CBL" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Central Bank Liquidity Swaps: Central bank liquidity swaps: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Central Bank Liquidity Swaps: Central bank liquidity swaps: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESH4SO_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="OFRA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Other Federal Reserve assets: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Other Federal Reserve assets: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11646" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12193" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11631" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12034" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12004" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12473" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9274" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9001" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9581" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1913" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPA_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="TA" COMPONENT="TA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Total Assets: Total assets: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Total Assets: Total assets: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="854174" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="830872" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="838675" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="830100" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="833289" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="828904" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="836281" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="842380" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="840566" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="840528" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAB_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="CCF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Corporate Credit Facilities LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Corporate Credit Facilities LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAC2H_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNCPFF2" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Net portfolio holdings of Commercial Paper Funding Facility II LLC (Post 2020-04-14): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Net portfolio holdings of Commercial Paper Funding Facility II LLC (Post 2020-04-14): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAC2MC_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNCPFF2" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Commercial paper held by Commercial Paper Funding Facility LLC, face value: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Commercial paper held by Commercial Paper Funding Facility LLC, face value: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAC2MCD15_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNCPFF2" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Commercial paper held by Commercial Paper Funding Facility LLC, Maturing within 15 days: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Commercial paper held by Commercial Paper Funding Facility LLC, Maturing within 15 days: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAC2MCD16T90_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNCPFF2" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Commercial paper held by Commercial Paper Funding Facility LLC, Maturing within 16 days to 90 days: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Commercial paper held by Commercial Paper Funding Facility LLC, Maturing within 16 days to 90 days: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAC2MCY01_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNCPFF2" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Commercial paper held by Commercial Paper Funding Facility LLC, Maturing within 91 days to 1 year: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Commercial paper held by Commercial Paper Funding Facility LLC, Maturing within 91 days to 1 year: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAD_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="MUNI" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Municipal Liquidity Facility LLC (Effective 2020-05-26): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Municipal Liquidity Facility LLC (Effective 2020-05-26): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAML1H_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="NPHML" COMPONENT="ML" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Net Portfolio Holdings of Maiden Lane LLCs: Net portfolio holdings of Maiden Lane LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Net Portfolio Holdings of Maiden Lane LLCs: Net portfolio holdings of Maiden Lane LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAML2H_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="NPHML" COMPONENT="MLII" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Net Portfolio Holdings of Maiden Lane LLCs: Net portfolio holdings of Maiden Lane II LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Net Portfolio Holdings of Maiden Lane LLCs: Net portfolio holdings of Maiden Lane II LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAAML3H_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="NPHML" COMPONENT="MLIII" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Net Portfolio Holdings of Maiden Lane LLCs: Net portfolio holdings of Maiden Lane III LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Net Portfolio Holdings of Maiden Lane LLCs: Net portfolio holdings of Maiden Lane III LLC: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAC_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="CN" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Coin: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Coin: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="683" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="708" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="729" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="770" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="810" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="830" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="846" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="841" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="826" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="820" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAE_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="OARS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Other Assets, Reserve Bank Table (post 2020-03-14): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Other Assets, Reserve Bank Table (post 2020-03-14): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAG_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="GCA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Gold certificate account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Gold certificate account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11039" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11039" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11039" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11039" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11040" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11040" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11040" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11040" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11040" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11040" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAI_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="IPC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Items in process of collection: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Items in process of collection: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="14132" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9572" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="16579" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6785" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9989" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8916" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="6584" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12267" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9334" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9405" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAL_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="SRPTACOL" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Securities, premiums, discounts, repurchase agreements, and loans: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Securities, premiums, discounts, repurchase agreements, and loans: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="795496" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="775656" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="777051" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="777657" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="777835" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="774255" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="787333" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="787395" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="788307" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="787895" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALD_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LN" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="37" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="79" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2056" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="30" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="55" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="41" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="464" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="103" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="38" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="43" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDB_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNALMF2" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Money Market Mutual Fund Liquidity Facility (Post 2020-03-18): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Money Market Mutual Fund Liquidity Facility (Post 2020-03-18): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDC_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNCE" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Other credit extensions: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Other credit extensions: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDH_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNPDCF2" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Primary dealer credit facility (Post 2020-03-17): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Primary dealer credit facility (Post 2020-03-17): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDJ_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNPPPLF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Payroll Protection Program Liquidity Facility: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Payroll Protection Program Liquidity Facility: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDP_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNPC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Primary credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Primary credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="55" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2026" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="30" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="430" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="14" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDQ_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNSC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Secondary credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Secondary credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="59" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDS_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNSEAC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Seasonal credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Seasonal credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="29" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="24" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="31" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="28" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="25" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="31" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="33" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="30" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="34" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="43" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDT_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNTALF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Term Asset-Backed Securities Loan Facility: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans: Term Asset-Backed Securities Loan Facility: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALDV_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="LNC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans (Calculated): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Liquidity and Credit Facilities: Loans (Calculated): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALG_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="SHOR" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: Securities held outright: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: Securities held outright: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="742870" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="744479" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="745685" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="746588" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="748840" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="748828" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="751327" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="752549" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="754682" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="755576" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGAM_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="FADS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: Federal agency debt securities: All: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: Federal agency debt securities: All: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGAO_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="FADS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: Federal agency debt securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: Federal agency debt securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGASMO_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="MBSSHOR" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: Mortgage-backed securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: Mortgage-backed securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGASMR_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="RMSSHOR" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets : Securities Held Outright: Residential mortgage-backed securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets : Securities Held Outright: Residential mortgage-backed securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGASMS_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="CMSSHOR" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets : Securities Held Outright: Commercial mortgage-backed securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets : Securities Held Outright: Commercial mortgage-backed securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGTR_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="RP" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Repurchase agreements: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Repurchase agreements: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="46500" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="25000" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="23250" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="25000" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="23000" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="19500" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="29750" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="29000" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="27750" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="26500" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGTRF_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="RPF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Repurchase agreements - Foreign official: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Repurchase agreements - Foreign official: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGTRO_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="RPD" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Repurchase agreements - Others: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Repurchase agreements - Others: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGUM_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="USTS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: All: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: All: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="742870" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="744479" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="745685" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="746588" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="748840" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="748828" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="751327" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="752549" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="754682" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="755576" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGUO_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="USTS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="742870" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="744479" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="745685" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="746588" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="748840" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="748828" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="751327" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="752549" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="754682" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="755576" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGUOB_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="USTSB" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Bills: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Bills: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="271270" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="271585" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="272834" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="272834" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="272854" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="272868" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="274142" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="274142" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="274142" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="274142" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGUOMC_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="USTSIC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Inflation compensation: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Inflation compensation: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3342" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3345" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3302" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3258" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3210" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3184" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3158" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3133" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3117" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3160" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGUOMI_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="USTSNBI" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Notes and bonds, inflation-indexed: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Notes and bonds, inflation-indexed: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="19983" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="20431" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="20431" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="20431" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="22196" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="22196" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="22196" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="22196" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="22196" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="22196" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGUOMN_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="USTSNBN" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Notes and bonds, nominal: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Notes and bonds, nominal: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="448274" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="449118" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="449118" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="450065" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="450580" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="450580" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="451830" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="453078" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="455227" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="456077" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALGUON_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ORH" COMPONENT="USTSNB" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Notes and bonds: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Securities Held Outright: U.S. Treasury securities: Notes and bonds: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="471599" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="472894" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="472851" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="473755" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="475986" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="475960" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="477185" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="478407" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="480540" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="481434" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALSD_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="DISCSHOR" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Unamortized discounts on securities held outright: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Unamortized discounts on securities held outright: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-2710" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-2718" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-2733" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-2758" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-2855" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-2884" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-2955" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-2981" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-3047" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="-3084" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALSP_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="PREMSHOR" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Unamortized premiums on securities held outright: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Unamortized premiums on securities held outright: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8800" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8817" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8793" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8796" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8795" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8771" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8748" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8724" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8883" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8861" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPALT_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="LCF" COMPONENT="TAC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Term auction credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Discontinued: Assets: Liquidity and Credit Facilities: Term auction credit: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAN_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="IDSA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Interdistrict settlement account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Interdistrict settlement account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAO_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="OA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Other Assets, Consolidated Table: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Other Assets, Consolidated Table: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9535" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="10394" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9914" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="10351" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="10405" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="10848" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="7457" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="7831" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="7892" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8299" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAOF_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="FCDA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Foreign currency denominated assets: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Foreign currency denominated assets: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="19269" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="19482" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="19340" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="19475" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="19186" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="18990" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="19000" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="18986" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="19146" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="19048" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAP_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="BP" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Bank premises: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Bank premises: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1820" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1821" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1822" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1823" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1824" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1824" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1820" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1820" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1821" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1821" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAR_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="GCA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Gold certificate and SDR certificate account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Gold certificate and SDR certificate account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPAS_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="ZZZZ" COMPONENT="SDRCA" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Special drawing rights certificate account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other: Special drawing rights certificate account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2200" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2200" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2200" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2200" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2200" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2200" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2200" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2200" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2200" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2200" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPL_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="TLC" COMPONENT="TLC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Total Liabilities and Capital: Total Liabilities and Capital: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Total Liabilities and Capital: Total Liabilities and Capital: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="854174" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="830872" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="838675" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="830100" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="833289" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="828904" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="836281" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="842380" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="840566" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="840528" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLC_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="CAP" COMPONENT="TC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Capital: Total capital: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Capital: Total capital: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="27051" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="27239" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="26957" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="27235" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="26845" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="26948" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="27334" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="27413" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="27646" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="27650" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLCP_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="CAP" COMPONENT="CPI" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Capital: Capital paid in: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Capital: Capital paid in: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="13542" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="13543" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="13548" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="13551" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="13558" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="13573" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="13715" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="13716" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="13739" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="13730" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLCS_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="CAP" COMPONENT="SUR" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Capital: Surplus: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Capital: Surplus: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12905" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12916" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12916" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12901" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12879" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12884" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12901" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12901" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12901" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12901" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLCU_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="CAP" COMPONENT="OC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Capital: Other capital accounts: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Capital: Other capital accounts: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="604" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="780" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="493" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="783" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="408" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="491" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="718" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="796" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1006" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1019" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLL_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="TL" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Total liabilities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Total liabilities: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="827124" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="803633" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="811718" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="802865" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="806444" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="801956" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="808946" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="814967" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="812919" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="812877" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLB_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="DORB" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Deposits with F.R. Banks, other than reserve balances: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Deposits with F.R. Banks, other than reserve balances: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12917" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="14247" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="15176" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="14432" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="14209" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12782" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="13959" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="12694" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="13817" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="13310" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLC_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DACI" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deferred availability cash items: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deferred availability cash items: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11719" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8632" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11964" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="7596" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8935" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8033" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="7182" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="9739" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8003" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="8175" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLD_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEP" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="30103" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="19314" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="24635" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="25845" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="24905" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="18927" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="25518" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="26048" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="25899" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="25722" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLDA_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEPTDF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: Term deposits held by depository institutions: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: Term deposits held by depository institutions: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLDD_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEPDI" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits: Other deposits held by depository institutions: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits: Other deposits held by depository institutions: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="25835" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="14441" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="18831" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="20123" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="19406" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="14613" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="20030" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="21369" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="20097" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="20556" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLDE_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEPTDF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: Deposits held by depository institutions: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: Deposits held by depository institutions: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLDF_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEPZF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: Foreign official: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: Foreign official: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="81" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="81" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="78" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="81" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="83" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="82" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="101" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="88" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="85" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="86" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLDO_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEPZO" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits: Other: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits: Other: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="265" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="327" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="298" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="374" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="321" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="256" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="262" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="257" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="290" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="230" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLDT_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEPUSTG" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: U.S. Treasury, General Account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: U.S. Treasury, General Account: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3922" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4465" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5429" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5266" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5095" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3973" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5125" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4334" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="5427" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="4851" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLE_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="OLAD" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Other liabilities and accrued dividends AND Total deferred credit items: Wednesday level (Post 2020-03-11)</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Other liabilities and accrued dividends AND Total deferred credit items: Wednesday level (Post 2020-03-11)</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLN_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="FRNN" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Federal Reserve notes, net of F.R. Bank holdings: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Federal Reserve notes, net of F.R. Bank holdings: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="756534" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="749419" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="749172" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="746453" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="748178" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="751007" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="752258" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="753325" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="753028" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="753788" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLNH_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="FRNHFRB" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Notes held by F.R. Banks (netted from Federal Reserve notes outstanding): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Notes held by F.R. Banks (netted from Federal Reserve notes outstanding): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="149953" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="159090" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="160030" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="163686" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="160979" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="158960" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="158621" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="157550" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="158778" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="158372" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLNO_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="FRNOS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Federal Reserve notes outstanding: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Federal Reserve notes outstanding: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="906487" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="908508" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="909202" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="910139" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="909157" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="909967" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="910879" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="910875" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="911806" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="912160" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLO_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="OLADRIF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Other liabilities and accrued dividends (Includes the liability for earnings remittances due to the U.S. Treasury): Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Other liabilities and accrued dividends (Includes the liability for earnings remittances due to the U.S. Treasury): Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1200" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1249" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1217" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1279" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1247" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1311" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1294" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1345" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1318" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1382" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLOO_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="OLAD" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Other liabilities and accrued dividends: Wednesday level (Through 2020-03-11)</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Other liabilities and accrued dividends: Wednesday level (Through 2020-03-11)</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1200" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1249" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1217" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1279" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1247" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1311" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1294" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1345" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1318" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1382" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLOP_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="RIF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Earnings remittances due to the U.S. Treasury: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Earnings remittances due to the U.S. Treasury: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLR_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="RRP" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Reverse repurchase agreements: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Reverse repurchase agreements: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="27567" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="25020" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="24729" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="21691" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="23180" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="22678" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="22695" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="24510" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="24672" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="23810" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLRD_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="RRPO" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Reverse repurchase agreements: Others: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Reverse repurchase agreements: Others: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="0" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPLLRF_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="RRPF" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Reverse repurchase agreements: Foreign official and international accounts: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Reverse repurchase agreements: Foreign official and international accounts: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="27567" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="25020" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="24729" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="21691" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="23180" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="22678" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="22695" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="24510" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="24672" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="23810" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESPPMLLDO_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="LIAB" COMPONENT="DEPZO" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: Other: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Liabilities: Deposits with F.R. Banks, other than reserve balances: Other: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="265" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="327" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="298" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="374" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="321" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="258" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="262" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="257" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="290" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="230" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESTBC_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="CIC" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Currency in circulation: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Currency in circulation: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="792193" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="785044" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="784779" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="782011" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="783704" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="786841" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="788399" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="789798" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="789834" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="790605" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESTBHT_N.WW" FREQ="19" CATEGORY="LIABCAP" SUBCATEGORY="OFDRB" COMPONENT="TCH" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Treasury cash holdings: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Liabilities and Capital: Other Factors Draining Reserve Balances: Treasury cash holdings: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="202" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="211" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="207" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="216" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="208" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="199" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="193" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="185" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="186" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="193" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESTBMG_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="GS" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Gold stock: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Gold stock: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11043" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11043" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11043" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11043" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11044" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11044" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11044" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11044" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11044" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="11044" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+<kf:Series SERIES_NAME="RESTBMT_N.WW" FREQ="19" CATEGORY="ASSET" SUBCATEGORY="OFSRB" COMPONENT="TCO" DISTRIBUTION="TOT" SERIESTYPE="L" UNIT="Currency" UNIT_MULT="1000000" CURRENCY="USD"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Treasury currency outstanding: Wednesday level</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Assets: Other Factors Supplying Reserve Balances: Treasury currency outstanding: Wednesday level</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="36540" TIME_PERIOD="2006-01-04" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="36540" TIME_PERIOD="2006-01-11" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="36540" TIME_PERIOD="2006-01-18" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="36539" TIME_PERIOD="2006-01-25" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="36539" TIME_PERIOD="2006-02-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="36858" TIME_PERIOD="2006-02-08" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="37176" TIME_PERIOD="2006-02-15" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="37495" TIME_PERIOD="2006-02-22" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="37813" TIME_PERIOD="2006-03-01" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="37826" TIME_PERIOD="2006-03-08" />
+</kf:Series>
+</frb:DataSet>
+</message:MessageGroup>
