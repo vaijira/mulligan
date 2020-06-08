@@ -27,7 +27,7 @@ async fn main() -> std::io::Result<()> {
             .wrap(middleware::DefaultHeaders::new().header("X-Version", "0.2"))
             .wrap(middleware::Compress::default())
             .wrap(middleware::Logger::default())
-            .service(fs::Files::new("/static", ".").show_files_listing())
+            .service(fs::Files::new("/static", "./web").show_files_listing())
             .service(index)
             .service(no_params)
             .service(

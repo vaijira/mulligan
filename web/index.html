@@ -65,7 +65,6 @@
       d3.csv('tmp/observations.csv')
         .then(function (data) {
           var data = Object.assign(data, {y: "Millions USD"});
-          console.log(data);
 
           var colors = d3.scaleOrdinal(data.columns.slice(1), d3.schemePaired);
           swatches({
@@ -78,30 +77,23 @@
           const width = 958;
 
           const series = d3.stack().keys(data.columns.slice(1))(data);
-          console.log(series);
 
           var xRange = d3.extent(data, d => d.date);
           var xDateRange = [new Date(xRange[0]), new Date(xRange[1])];
-          console.log(xDateRange);
+
           var x = d3.scaleUtc()
             .domain(xDateRange)
             .range([margin.left, width - margin.right]);
-          console.log(x);
 
-          console.log(d3.max(series, d => d3.max(d, d => d[1])));
           var y = d3.scaleLinear()
             .domain([0, d3.max(series, d => d3.max(d, d => d[1]))])
             .nice()
             .range([height - margin.bottom, margin.top]);
-          console.log(y);
 
           var area = d3.area()
             .x(d => x(new Date(d.data.date)))
             .y0(d => y(d[0]))
             .y1(d => y(d[1]));
-          console.log(x("2018-12-18"));
-          console.log(y(0));
-          console.log(area(series[0]));
 
           var xAxis = g => g
             .attr("transform", `translate(0,${height - margin.bottom})`)
@@ -130,6 +122,7 @@
 </head>
 
 <body onload="main();">
+  <h1>Federal reserve assets</h1>
   <div style="display: flex; align-items: center; margin-left: 0px; min-height: 33px; font: 10px sans-serif;">
     <div id="fed-assets-items" style="width: 100%; columns: 180px;"></div>
   </div>
