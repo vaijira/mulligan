@@ -163,7 +163,10 @@ fn get_annotation(serie: &Node<'_, '_>) -> String {
 
 fn parse_annotation(annotation: &str) -> String {
     let path = annotation.replace(": Wednesday level", "");
-    let path = path.replace(": Securities Held Outright: Securities held outright", ": Securities Held Outright");
+    let path = path.replace(
+        ": Securities Held Outright: Securities held outright",
+        ": Securities Held Outright",
+    );
     let path = path.replace(": All", "");
     let path = path.replace("Discontinued: ", "");
     let path = path.replace(": ", "/");
