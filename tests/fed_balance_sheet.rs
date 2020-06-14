@@ -28,8 +28,6 @@ Assets                                                                   7097316
       Primary dealer credit facility (Post 2020-03-17)                      6241
       Seasonal credit                                                          2
     Net portfolio holdings of Commercial Paper Funding Facility II L       12794
-  Other Factors Supplying Reserve Balances                          
-    Foreign currency denominated assets                                    20564
   Other                                                             
     Bank premises                                                           2205
     Coin                                                                    1447
@@ -46,8 +44,6 @@ Assets                                                                   7097316
       Inflation compensation                                               36843
       Notes and bonds, inflation-indexed                                  257451
       Notes and bonds, nominal                                           3489174
-  Unamortized discounts on securities held outright                        -5500
-  Unamortized premiums on securities held outright                        304256
 "#;
 
 const ASSETS_20200520: &str = r#"
@@ -63,8 +59,6 @@ Assets                                                                   7037258
       Primary dealer credit facility (Post 2020-03-17)                      7501
       Seasonal credit                                                          3
     Net portfolio holdings of Commercial Paper Funding Facility II L        4293
-  Other Factors Supplying Reserve Balances                          
-    Foreign currency denominated assets                                    20595
   Other                                                             
     Bank premises                                                           2206
     Coin                                                                    1478
@@ -81,8 +75,6 @@ Assets                                                                   7037258
       Inflation compensation                                               36797
       Notes and bonds, inflation-indexed                                  255266
       Notes and bonds, nominal                                           3471224
-  Unamortized discounts on securities held outright                        -5691
-  Unamortized premiums on securities held outright                        304104
 "#;
 
 const ASSETS_20200513: &str = r#"
@@ -97,8 +89,6 @@ Assets                                                                   6934227
       Primary credit                                                       24239
       Primary dealer credit facility (Post 2020-03-17)                     10288
     Net portfolio holdings of Commercial Paper Funding Facility II L        4292
-  Other Factors Supplying Reserve Balances                          
-    Foreign currency denominated assets                                    20484
   Other                                                             
     Bank premises                                                           2205
     Coin                                                                    1509
@@ -115,8 +105,6 @@ Assets                                                                   6934227
       Inflation compensation                                               36592
       Notes and bonds, inflation-indexed                                  252016
       Notes and bonds, nominal                                           3442616
-  Unamortized discounts on securities held outright                        -5354
-  Unamortized premiums on securities held outright                        297516
 "#;
 
 const ASSETS_20200506: &str = r#"
@@ -130,8 +118,6 @@ Assets                                                                   6721420
       Primary credit                                                       26494
       Primary dealer credit facility (Post 2020-03-17)                     14903
     Net portfolio holdings of Commercial Paper Funding Facility II L        3988
-  Other Factors Supplying Reserve Balances                          
-    Foreign currency denominated assets                                    20521
   Other                                                             
     Bank premises                                                           2203
     Coin                                                                    1557
@@ -148,8 +134,6 @@ Assets                                                                   6721420
       Inflation compensation                                               36365
       Notes and bonds, inflation-indexed                                  248266
       Notes and bonds, nominal                                           3409516
-  Unamortized discounts on securities held outright                        -5534
-  Unamortized premiums on securities held outright                        286502
 "#;
 
 const ASSETS_20200429: &str = r#"
@@ -163,8 +147,6 @@ Assets                                                                   6655929
       Primary credit                                                       31759
       Primary dealer credit facility (Post 2020-03-17)                     25504
     Net portfolio holdings of Commercial Paper Funding Facility II L        3372
-  Other Factors Supplying Reserve Balances                          
-    Foreign currency denominated assets                                    20525
   Other                                                             
     Bank premises                                                           2208
     Coin                                                                    1598
@@ -181,8 +163,6 @@ Assets                                                                   6655929
       Inflation compensation                                               36038
       Notes and bonds, inflation-indexed                                  242290
       Notes and bonds, nominal                                           3367047
-  Unamortized discounts on securities held outright                        -5711
-  Unamortized premiums on securities held outright                        283240
 "#;
 
 
@@ -230,8 +210,6 @@ Assets                                                                   2282548
     Net portfolio holdings of Maiden Lane LLC                              27267
   Net Portfolio Holdings of TALF LLC                                
     Net portfolio holdings of TALF LLC                                       372
-  Other Factors Supplying Reserve Balances                          
-    Foreign currency denominated assets                                    24896
   Other                                                             
     Bank premises                                                           2238
     Coin                                                                    2133
@@ -249,8 +227,6 @@ Assets                                                                   2282548
       Inflation compensation                                                5519
       Notes and bonds, inflation-indexed                                   43777
       Notes and bonds, nominal                                            708872
-  Unamortized discounts on securities held outright                        -3368
-  Unamortized premiums on securities held outright                         53212
 "#;
 
 #[test]
@@ -269,8 +245,6 @@ Assets                                                                    840528
   Liquidity and Credit Facilities                                   
     Loans                                                                     43
       Seasonal credit                                                         43
-  Other Factors Supplying Reserve Balances                          
-    Foreign currency denominated assets                                    19048
   Other                                                             
     Bank premises                                                           1821
     Coin                                                                     820
@@ -285,8 +259,6 @@ Assets                                                                    840528
       Inflation compensation                                                3160
       Notes and bonds, inflation-indexed                                   22196
       Notes and bonds, nominal                                            456077
-  Unamortized discounts on securities held outright                        -3084
-  Unamortized premiums on securities held outright                          8861
 "#;
 
 #[test]

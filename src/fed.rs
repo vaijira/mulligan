@@ -46,9 +46,6 @@ const COMMON_NS: &str = "http://www.SDMX.org/resources/SDMXML/schemas/v1_0/commo
     The following series seems a duplicate of RESPPALD_N.WW series
     RESPPALDV_N.WW -> subcategory(LCF) -> component(LNC)
 
-    It seems duplicate of "RESPPAG_N.WW"
-    RESTBMG_N.WW -> subcategory(OFSRB): Other Factors Supplying Reserve Balances -> component(GS): Gold stock
-
     Redundant (it could be included if we preparse data so concepts belong to this component, like all securities held outright)
     RESPPAL_N.WW -> subcategory(ZZZZ): Other: -> component (SRPTACOL) -> Securities, premiums, discounts, repurchase agreements, and loans: Wednesday level
 
@@ -72,12 +69,17 @@ const COMMON_NS: &str = "http://www.SDMX.org/resources/SDMXML/schemas/v1_0/commo
     Redundant (this is a grouping category of notes and bonds)
     RESPPALGUON_N.WW -> subcategory(ORH) Securities Held Outright: U.s treasury securities -> component(USTSNB) Notes and bonds
 
-    The following don't seem to fit in the balance sheet part:
+    We have to remove every subcategory of OFSRB (other factors supplying reser balances):
+    RESTBMG_N.WW -> subcategory(OFSRB): Other Factors Supplying Reserve Balances -> component(GS): Gold stock
     RESH4S_N.WW -> subcategory(OFSRB): Other Factors Supplying Reserve Balances -> component(FSRF): Total factors supplying reserves funds
     RESH4SC_N.WW -> subcategory(OFSRB): Other Factors Supplying Reserve Balances -> component(RBC): Reserve Bank credit
     RESH4SCF_N.WW -> subcategory(OFSRB): Other Factors Supplying Reserve Balances -> component(FLT): Float
     RESH4SO_N.WW -> subcategory(OFSRB): Other Factors Supplying Reserve Balances -> component(OFRA): Other Federal Reserve assets
     RESTBMT_N.WW -> subcategory(OFSRB): Other Factors Supplying Reserve Balances -> component(TCO): Treasury currency outstanding
+    RESPPALSD_N.WW -> subcategory(OFSRB):  Unamortized discounts on securities held outright -> component(DISCSHOR)
+    RESPPALSP_N.WW ->  subcategory(OFSRB):  Unamortized premiums on securities held outright -> component(PREMSHOR)
+    RESPPAOF_N.WW -> subcategory(OFSRB): Other Factors Supplying Reserve Balances: -> compoent(FCDA):  Foreign currency denominated assets
+    RESTBMT_N.WW -> subcategory(OFSRB): Other Factors Supplying Reserve Balances -> component(TCO):Treasury currency outstanding
 */
 lazy_static! {
     static ref SERIES_TO_FILTER_OUT: HashSet<&'static str> = {
@@ -102,6 +104,10 @@ lazy_static! {
         m.insert("RESH4SC_N.WW");
         m.insert("RESH4SCF_N.WW");
         m.insert("RESH4SO_N.WW");
+        m.insert("RESTBMT_N.WW");
+        m.insert("RESPPALSD_N.WW");
+        m.insert("RESPPALSP_N.WW");
+        m.insert("RESPPAOF_N.WW");
         m.insert("RESTBMT_N.WW");
         m
     };
