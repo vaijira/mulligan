@@ -5,6 +5,9 @@ use std::usize;
 /// Parent path for assets.
 pub const ASSETS_PATH: &str = "Assets";
 
+/// Parent path for liabilities
+pub const LIABILITIES_PATH: &str = "Liabilities";
+
 /// Use for intermediate series that contains children but no data.
 pub const UNDEFINED_SERIES_NAME: &str = "UNDEFINED";
 
@@ -85,7 +88,7 @@ impl Concept {
 
     /// update the concept specified by path with its accounting value.
     pub fn update_concept_value(&mut self, path: &str, value: i64) {
-        if path == ASSETS_PATH {
+        if path == ASSETS_PATH || path == LIABILITIES_PATH {
             self.value = value;
             return;
         }
@@ -155,16 +158,54 @@ impl fmt::Display for Concept {
     }
 }
 
+/// Type of balance sheet concepts
+pub enum ConceptType {
+    /// Assets in balance sheet
+    Assets,
+    /// Liabilities in balance sheet
+    Liabilities,
+    // Capital,
+}
+
 /// Balance sheet containing assets, liabilities and capital.
 #[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct BalanceSheet {
-    /// balance sheet assets.
-    pub assets: Concept,
+    assets: Concept,
+    liabilities: Concept,
+    // capital: Concept,
+}
+
+impl BalanceSheet {
+    /// Create new balance sheet from concepts.
+    pub fn new(assets: Concept, liabilities: Concept) -> BalanceSheet {
+        BalanceSheet {
+            assets,
+            liabilities,
+        }
+    }
+
+    /// Get a reference to a concrete concept.
+    pub fn get_concept(&self, ctype: &ConceptType) -> &Concept {
+        match ctype {
+            ConceptType::Assets => &self.assets,
+            ConceptType::Liabilities => &self.liabilities,
+            // Capital => &self.capital,
+        }
+    }
+
+    /// Get a mutable reference from a concrete concept.
+    pub fn get_concept_mut(&mut self, ctype: &ConceptType) -> &mut Concept {
+        match ctype {
+            ConceptType::Assets => &mut self.assets,
+            ConceptType::Liabilities => &mut self.liabilities,
+            // Capital => &mut self.capital,
+        }
+    }
 }
 
 impl fmt::Display for BalanceSheet {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "Balance sheet\n{}\n", self.assets)
+        write!(f, "Balance sheet\n{}\n{}\n", self.assets, self.liabilities)
     }
 }
 

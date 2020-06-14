@@ -1,7 +1,7 @@
 use clap::clap_app;
 use mulligan::fed;
 use mulligan::fed::ObservationMap;
-use mulligan::{Concept, NaiveDate};
+use mulligan::{Concept, ConceptType, NaiveDate};
 use std::fs;
 use std::fs::File;
 use std::io;
@@ -11,7 +11,8 @@ use std::str;
 
 const H41_FILE_PATH: &str = "/tmp/h41.zip";
 const OBS_JSON_FILE_NAME: &str = "observations.json";
-const OBS_CSV_FILE_NAME: &str = "observations.csv";
+const ASSETS_CSV_FILE_NAME: &str = "assets.csv";
+const LIABILITIES_CSV_FILE_NAME: &str = "liabilities.csv";
 const CSV_SEPARATOR_STR: &str = ",";
 
 #[tokio::main]
@@ -141,8 +142,9 @@ fn csv_row(date: &NaiveDate, c: &Concept) -> Result<String, Box<dyn std::error::
 fn create_observation_csv_file(
     dst_path: &str,
     obs: &ObservationMap,
+    ctype: &ConceptType,
 ) -> Result<(), Box<dyn std::error::Error>> {
-    let header = csv_header(&obs.iter().next().unwrap().1.assets)?;
+    let header = csv_header(&obs.iter().next().unwrap().1.get_concept(ctype))?;
 
     let mut dest = {
         println!(
@@ -157,7 +159,7 @@ fn create_observation_csv_file(
     dest.write_all(header.as_bytes())?;
     dest.write_all(b"\n")?;
     for (obs_date, obs_balance_sheet) in obs {
-        let row = csv_row(obs_date, &obs_balance_sheet.assets)?;
+        let row = csv_row(obs_date, &obs_balance_sheet.get_concept(ctype))?;
         io::copy(&mut row.as_bytes(), &mut dest)?;
     }
 
@@ -194,8 +196,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let obs_json_file = format!("{}/{}", output_dir, OBS_JSON_FILE_NAME);
     create_observation_json_file(&obs_json_file, &observations)?;
 
-    let obs_csv_file = format!("{}/{}", output_dir, OBS_CSV_FILE_NAME);
-    create_observation_csv_file(&obs_csv_file, &observations)?;
+    let assets_csv_file = format!("{}/{}", output_dir, ASSETS_CSV_FILE_NAME);
+    create_observation_csv_file(&assets_csv_file, &observations, &ConceptType::Assets)?;
+
+    let liabilities_csv_file = format!("{}/{}", output_dir, LIABILITIES_CSV_FILE_NAME);
+    create_observation_csv_file(&liabilities_csv_file, &observations, &ConceptType::Liabilities)?;
 
     Ok(())
 }

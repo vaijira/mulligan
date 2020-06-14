@@ -1,5 +1,5 @@
 use mulligan::fed;
-use mulligan::NaiveDate;
+use mulligan::{ConceptType, NaiveDate};
 
 const FED_XML_2020_DATA_PATH: &str = "tests/data/FRB_H41_2020.xml";
 const FED_XML_2010_DATA_PATH: &str = "tests/data/FRB_H41_2010.xml";
@@ -7,12 +7,12 @@ const FED_XML_2006_DATA_PATH: &str = "tests/data/FRB_H41_2006.xml";
 const LINE_SEPARATOR_STR: &str = "\n";
 
 fn assert_by_lines(lines1: &str, lines2: &str) {
-  for (l1, l2) in lines1
-      .split(LINE_SEPARATOR_STR)
-      .zip(lines2.split(LINE_SEPARATOR_STR))
-  {
-      assert_eq!(l1, l2);
-  }
+    for (l1, l2) in lines1
+        .split(LINE_SEPARATOR_STR)
+        .zip(lines2.split(LINE_SEPARATOR_STR))
+    {
+        assert_eq!(l1, l2);
+    }
 }
 
 const ASSETS_20200527: &str = r#"
@@ -46,6 +46,22 @@ Assets                                                                   7097316
       Notes and bonds, nominal                                           3489174
 "#;
 
+const LIABILITIES_20200527: &str = r#"
+Liabilities                                                              7058402
+  Deferred availability cash items                                           355
+  Deposits                                                               4839897
+    Foreign official                                                       16251
+    Other                                                                 179062
+    Other deposits held by depository institutions                       3317688
+    U.S. Treasury, General Account                                       1326897
+  Earnings remittances due to the U.S. Treasury                             1160
+  Federal Reserve notes, net of F.R. Bank holdings                       1899514
+  Other liabilities and accrued dividends (Includes the liability fo        8160
+  Reverse repurchase agreements                                           243976
+    Foreign official and international accounts                           239650
+    Others                                                                  4326
+"#;
+
 const ASSETS_20200520: &str = r#"
 Assets                                                                   7037258
   Central Bank Liquidity Swaps                                      
@@ -75,6 +91,22 @@ Assets                                                                   7037258
       Inflation compensation                                               36797
       Notes and bonds, inflation-indexed                                  255266
       Notes and bonds, nominal                                           3471224
+"#;
+
+const LIABILITIES_20200520: &str = r#"
+Liabilities                                                              6998365
+  Deferred availability cash items                                           261
+  Deposits                                                               4780812
+    Foreign official                                                       16228
+    Other                                                                 267066
+    Other deposits held by depository institutions                       3304221
+    U.S. Treasury, General Account                                       1193297
+  Earnings remittances due to the U.S. Treasury                             1530
+  Federal Reserve notes, net of F.R. Bank holdings                       1890000
+  Other liabilities and accrued dividends (Includes the liability fo       11644
+  Reverse repurchase agreements                                           266649
+    Foreign official and international accounts                           256923
+    Others                                                                  9726
 "#;
 
 const ASSETS_20200513: &str = r#"
@@ -107,6 +139,22 @@ Assets                                                                   6934227
       Notes and bonds, nominal                                           3442616
 "#;
 
+const LIABILITIES_20200513: &str = r#"
+Liabilities                                                              6895336
+  Deferred availability cash items                                           288
+  Deposits                                                               4663966
+    Foreign official                                                       16328
+    Other                                                                 246034
+    Other deposits held by depository institutions                       3263431
+    U.S. Treasury, General Account                                       1138172
+  Earnings remittances due to the U.S. Treasury                             2095
+  Federal Reserve notes, net of F.R. Bank holdings                       1881319
+  Other liabilities and accrued dividends (Includes the liability fo       21114
+  Reverse repurchase agreements                                           281150
+    Foreign official and international accounts                           267325
+    Others                                                                 13825
+"#;
+
 const ASSETS_20200506: &str = r#"
 Assets                                                                   6721420
   Central Bank Liquidity Swaps                                      
@@ -134,6 +182,22 @@ Assets                                                                   6721420
       Inflation compensation                                               36365
       Notes and bonds, inflation-indexed                                  248266
       Notes and bonds, nominal                                           3409516
+"#;
+
+const LIABILITIES_20200506: &str = r#"
+Liabilities                                                              6682549
+  Deferred availability cash items                                           272
+  Deposits                                                               4518539
+    Foreign official                                                       16336
+    Other                                                                 193329
+    Other deposits held by depository institutions                       3165606
+    U.S. Treasury, General Account                                       1143268
+  Earnings remittances due to the U.S. Treasury                             2029
+  Federal Reserve notes, net of F.R. Bank holdings                       1873325
+  Other liabilities and accrued dividends (Includes the liability fo       25208
+  Reverse repurchase agreements                                           265206
+    Foreign official and international accounts                           264031
+    Others                                                                  1175
 "#;
 
 const ASSETS_20200429: &str = r#"
@@ -165,6 +229,21 @@ Assets                                                                   6655929
       Notes and bonds, nominal                                           3367047
 "#;
 
+const LIABILITIES_20200429: &str = r#"
+Liabilities                                                              6617091
+  Deferred availability cash items                                          1438
+  Deposits                                                               4460138
+    Foreign official                                                       16323
+    Other                                                                 204070
+    Other deposits held by depository institutions                       3163513
+    U.S. Treasury, General Account                                       1076232
+  Earnings remittances due to the U.S. Treasury                             1933
+  Federal Reserve notes, net of F.R. Bank holdings                       1862131
+  Other liabilities and accrued dividends (Includes the liability fo       24279
+  Reverse repurchase agreements                                           269106
+    Foreign official and international accounts                           267656
+    Others                                                                  1450
+"#;
 
 #[test]
 fn balance_sheets_2020() {
@@ -172,26 +251,35 @@ fn balance_sheets_2020() {
     let observations = fed::parse_h41_data(&h41_data_text).unwrap();
 
     let date = NaiveDate::parse_from_str("2020-05-27", "%Y-%m-%d").unwrap();
-    let displayed_assets = format!("{}", observations.get(&date).unwrap().assets);
+    let displayed_assets = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Assets));
     assert_by_lines(ASSETS_20200527, &displayed_assets);
+    let displayed_liabilities = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Liabilities));
+    assert_by_lines(LIABILITIES_20200527, &displayed_liabilities);
 
     let date = NaiveDate::parse_from_str("2020-05-20", "%Y-%m-%d").unwrap();
-    let displayed_assets = format!("{}", observations.get(&date).unwrap().assets);
+    let displayed_assets = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Assets));
     assert_by_lines(ASSETS_20200520, &displayed_assets);
+    let displayed_liabilities = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Liabilities));
+    assert_by_lines(LIABILITIES_20200520, &displayed_liabilities);
 
     let date = NaiveDate::parse_from_str("2020-05-13", "%Y-%m-%d").unwrap();
-    let displayed_assets = format!("{}", observations.get(&date).unwrap().assets);
+    let displayed_assets = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Assets));
     assert_by_lines(ASSETS_20200513, &displayed_assets);
+    let displayed_liabilities = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Liabilities));
+    assert_by_lines(LIABILITIES_20200513, &displayed_liabilities);
 
     let date = NaiveDate::parse_from_str("2020-05-06", "%Y-%m-%d").unwrap();
-    let displayed_assets = format!("{}", observations.get(&date).unwrap().assets);
+    let displayed_assets = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Assets));
     assert_by_lines(ASSETS_20200506, &displayed_assets);
+    let displayed_liabilities = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Liabilities));
+    assert_by_lines(LIABILITIES_20200506, &displayed_liabilities);
 
     let date = NaiveDate::parse_from_str("2020-04-29", "%Y-%m-%d").unwrap();
-    let displayed_assets = format!("{}", observations.get(&date).unwrap().assets);
+    let displayed_assets = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Assets));
     assert_by_lines(ASSETS_20200429, &displayed_assets);
+    let displayed_liabilities = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Liabilities));
+    assert_by_lines(LIABILITIES_20200429, &displayed_liabilities);
 }
-
 
 const ASSETS_20100310: &str = r#"
 Assets                                                                   2282548
@@ -229,16 +317,32 @@ Assets                                                                   2282548
       Notes and bonds, nominal                                            708872
 "#;
 
+const LIABILITIES_20100310: &str = r#"
+Liabilities                                                              2229730
+  Deferred availability cash items                                          2391
+  Deposits                                                               1266950
+    Foreign official                                                        2616
+    Other                                                                    295
+    Other deposits held by depository institutions                       1190756
+    U.S. Treasury, General Account                                         23292
+    U.S. Treasury, Supplementary Financing Account                         49993
+  Federal Reserve notes, net of F.R. Bank holdings                        893623
+  Other liabilities and accrued dividends (Includes the liability fo       10862
+  Reverse repurchase agreements                                            55903
+    Foreign official and international accounts                            55903
+"#;
+
 #[test]
 fn balance_sheets_2010() {
     let h41_data_text = std::fs::read_to_string(FED_XML_2010_DATA_PATH).unwrap();
     let observations = fed::parse_h41_data(&h41_data_text).unwrap();
 
     let date = NaiveDate::parse_from_str("2010-03-10", "%Y-%m-%d").unwrap();
-    let displayed_assets = format!("{}", observations.get(&date).unwrap().assets);
+    let displayed_assets = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Assets));
     assert_by_lines(ASSETS_20100310, &displayed_assets);
+    let displayed_liabilities = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Liabilities));
+    assert_by_lines(LIABILITIES_20100310, &displayed_liabilities);
 }
-
 
 const ASSETS_20060308: &str = r#"
 Assets                                                                    840528
@@ -261,12 +365,28 @@ Assets                                                                    840528
       Notes and bonds, nominal                                            456077
 "#;
 
+const LIABILITIES_20060308: &str = r#"
+Liabilities                                                               812877
+  Deferred availability cash items                                          8175
+  Deposits                                                                 25722
+    Foreign official                                                          86
+    Other                                                                    230
+    Other deposits held by depository institutions                         20556
+    U.S. Treasury, General Account                                          4851
+  Federal Reserve notes, net of F.R. Bank holdings                        753788
+  Other liabilities and accrued dividends (Includes the liability fo        1382
+  Reverse repurchase agreements                                            23810
+    Foreign official and international accounts                            23810
+"#;
+
 #[test]
 fn balance_sheets_2006() {
     let h41_data_text = std::fs::read_to_string(FED_XML_2006_DATA_PATH).unwrap();
     let observations = fed::parse_h41_data(&h41_data_text).unwrap();
 
     let date = NaiveDate::parse_from_str("2006-03-08", "%Y-%m-%d").unwrap();
-    let displayed_assets = format!("{}", observations.get(&date).unwrap().assets);
+    let displayed_assets = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Assets));
     assert_by_lines(ASSETS_20060308, &displayed_assets);
+    let displayed_liabilities = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Liabilities));
+    assert_by_lines(LIABILITIES_20060308, &displayed_liabilities);
 }

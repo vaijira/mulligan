@@ -4,7 +4,7 @@ use roxmltree::{Document, Node};
 use std::collections::{BTreeMap, HashMap, HashSet};
 
 use crate::types;
-use crate::types::{BalanceSheet, Concept};
+use crate::types::{BalanceSheet, Concept, ConceptType};
 
 /*
     Urls for FED H.4.1 statistical data
@@ -25,6 +25,9 @@ pub const H41_DATA_XML: &str = "H41_data.xml";
 
 /// Parent series for FED H.4.1 assets
 pub(crate) const FED_ASSETS_SERIES_NAME: &str = "RESPPA_N.WW";
+
+/// Parent series for FED H.4.1 liabilities
+pub(crate) const FED_LIABILITIES_SERIES_NAME: &str = "RESPPLL_N.WW";
 
 const STRUCTURE_NS: &str = "http://www.SDMX.org/resources/SDMXML/schemas/v1_0/structure";
 const KF_NS: &str = "http://www.federalreserve.gov/structure/compact/H41_H41";
@@ -80,6 +83,20 @@ const COMMON_NS: &str = "http://www.SDMX.org/resources/SDMXML/schemas/v1_0/commo
     RESPPALSP_N.WW ->  subcategory(OFSRB):  Unamortized premiums on securities held outright -> component(PREMSHOR)
     RESPPAOF_N.WW -> subcategory(OFSRB): Other Factors Supplying Reserve Balances: -> compoent(FCDA):  Foreign currency denominated assets
     RESTBMT_N.WW -> subcategory(OFSRB): Other Factors Supplying Reserve Balances -> component(TCO):Treasury currency outstanding
+
+    ************************************************************************************
+
+    LIABILITIES SERIES DISCARDED
+
+    "RESPPLLDE_N.WW" it seems a duplicate of "RESPPLLDD_N.WW"
+
+    "RESPPLLDO_N.WW" it seems a duplicate of "RESPPMLLDO_N.WW"
+
+    "RESPPLLE_N.WW" redundant because of "RESPPLLO_N.WW"
+
+    "RESPPLLNH_N.WW"  and "RESPPLLNO_N.WW"  redundant because of  "RESPPLLN_N.WW"
+
+    "RESPPLLOO_N.WW" redundant because of "RESPPLLO_N.WW"
 */
 lazy_static! {
     static ref SERIES_TO_FILTER_OUT: HashSet<&'static str> = {
@@ -109,6 +126,12 @@ lazy_static! {
         m.insert("RESPPALSP_N.WW");
         m.insert("RESPPAOF_N.WW");
         m.insert("RESTBMT_N.WW");
+        m.insert("RESPPLLDE_N.WW");
+        m.insert("RESPPLLDO_N.WW");
+        m.insert("RESPPLLE_N.WW");
+        m.insert("RESPPLLNH_N.WW");
+        m.insert("RESPPLLNO_N.WW");
+        m.insert("RESPPLLOO_N.WW");
         m
     };
 }
@@ -130,6 +153,23 @@ fn get_asset_series<'a>(doc: &'a Document<'_>) -> Vec<Node<'a, 'a>> {
             n.is_element()
                 && n.has_tag_name((KF_NS, SERIES_TAG))
                 && n.attribute("CATEGORY") == Some("ASSET")
+                && n.attribute("DISTRIBUTION") == Some("TOT")
+                && n.attribute("SERIESTYPE") == Some("L")
+                && n.attribute("FREQ") == Some("19")
+                && !SERIES_TO_FILTER_OUT.contains(n.attribute("SERIES_NAME").unwrap())
+        })
+        .collect()
+}
+
+fn get_liabilities_series<'a>(doc: &'a Document<'_>) -> Vec<Node<'a, 'a>> {
+    doc.descendants()
+        .filter(|n| {
+            n.is_element()
+                && n.has_tag_name((KF_NS, SERIES_TAG))
+                && n.attribute("CATEGORY") == Some("LIABCAP")
+                && n.attribute("SUBCATEGORY") != Some("CAP")
+                && n.attribute("SUBCATEGORY") != Some("OFDRB")
+                && n.attribute("SUBCATEGORY") != Some("TLC")
                 && n.attribute("DISTRIBUTION") == Some("TOT")
                 && n.attribute("SERIESTYPE") == Some("L")
                 && n.attribute("FREQ") == Some("19")
@@ -167,7 +207,7 @@ fn get_annotation(serie: &Node<'_, '_>) -> String {
         .to_string()
 }
 
-fn parse_annotation(annotation: &str) -> String {
+fn parse_asset_annotation(annotation: &str) -> String {
     let path = annotation.replace(": Wednesday level", "");
     let path = path.replace(
         ": Securities Held Outright: Securities held outright",
@@ -187,17 +227,45 @@ fn parse_annotation(annotation: &str) -> String {
     }
 }
 
-fn paths_to_balance_sheet_assets(paths: Trie<String, String>) -> BalanceSheet {
+fn parse_liability_annotation(annotation: &str) -> String {
+    let path = annotation.replace(": Wednesday level", "");
+    let path = path.replace(": Deposits with F.R. Banks, other than reserve balances", ": Deposits");
+    let path = path.replace("Liabilities and Capital: ", "");
+    let path = path.replace(": All", "");
+    let path = path.replace("Discontinued: ", "");
+    let path = path.replace(": ", "/");
+    if path == "Liabilities/Total liabilities" {
+        return types::LIABILITIES_PATH.to_string();
+    }
+    path
+}
+
+fn paths_to_balance_sheet_assets(
+    assets_paths: Trie<String, String>,
+    liabilities_paths: Trie<String, String>,
+) -> BalanceSheet {
     let mut assets = Concept::new(types::ASSETS_PATH, FED_ASSETS_SERIES_NAME);
 
-    for (path, series_name) in paths.iter() {
+    for (path, series_name) in assets_paths.iter() {
         if path == types::ASSETS_PATH {
             continue;
         }
         assets.insert_concept(path, series_name);
     }
 
-    BalanceSheet { assets }
+    let mut liabilities = Concept::new(types::LIABILITIES_PATH, FED_LIABILITIES_SERIES_NAME);
+
+    for (path, series_name) in liabilities_paths.iter() {
+        if path == types::LIABILITIES_PATH {
+            continue;
+        }
+        liabilities.insert_concept(path, series_name);
+    }
+
+    BalanceSheet::new(
+        assets,
+        liabilities,
+    )
 }
 
 #[allow(dead_code)]
@@ -226,25 +294,32 @@ fn parse_h41_struct(text: &String) -> Result<ConceptMap, Box<dyn std::error::Err
     Ok(concepts)
 }
 
-/// Parse H.4.1 fed XML data file to return an ordered map with a
-/// balance sheet for each period of time.
-pub fn parse_h41_data(text: &String) -> Result<ObservationMap, Box<dyn std::error::Error>> {
-    let doc = Document::parse(text)?;
-    let mut obs: ObservationMap = BTreeMap::new();
-
-    let mut asset_series: Vec<Node<'_, '_>> = get_asset_series(&doc);
+fn get_paths(
+    series: &mut Vec<Node<'_, '_>>,
+    parse_fn: fn(&str) -> String,
+) -> Result<Trie<String, String>, Box<dyn std::error::Error>> {
     let mut paths: Trie<String, String> = Trie::new();
-    for serie in &mut asset_series {
+
+    for serie in series {
         let serie_name = serie.attribute("SERIES_NAME").unwrap();
         let annotation = get_annotation(&serie);
-        paths.insert(parse_annotation(&annotation), serie_name.to_string());
+        paths.insert(parse_fn(&annotation), serie_name.to_string());
     }
 
-    let bs_template = paths_to_balance_sheet_assets(paths);
+    Ok(paths)
+}
 
-    for serie in &mut asset_series {
+
+fn fill_observations(
+    obs: &mut ObservationMap,
+    bs_template: &BalanceSheet,
+    series: &mut Vec<Node<'_, '_>>,
+    parse_fn: fn(&str) -> String,
+    ctype: &ConceptType,
+) -> Result<(), Box<dyn std::error::Error>> {
+    for serie in series {
         let annotation = get_annotation(&serie);
-        let path = parse_annotation(&annotation);
+        let path = parse_fn(&annotation);
         let mut observations = get_children_node_elements(&serie, FRB_NS, OBS_TAG);
         for observation in &mut observations {
             let date = NaiveDate::parse_from_str(
@@ -258,10 +333,30 @@ pub fn parse_h41_data(text: &String) -> Result<ObservationMap, Box<dyn std::erro
             };
             obs.entry(date)
                 .or_insert(bs_template.clone())
-                .assets
+                .get_concept_mut(ctype)
                 .update_concept_value(&path, value.parse::<i64>().unwrap_or(0));
         }
     }
+
+    Ok(())
+}
+
+/// Parse H.4.1 fed XML data file to return an ordered map with a
+/// balance sheet for each period of time.
+pub fn parse_h41_data(text: &String) -> Result<ObservationMap, Box<dyn std::error::Error>> {
+    let doc = Document::parse(text)?;
+    let mut obs: ObservationMap = BTreeMap::new();
+
+    let mut asset_series: Vec<Node<'_, '_>> = get_asset_series(&doc);
+    let mut liabilities_series: Vec<Node<'_, '_>> = get_liabilities_series(&doc);
+
+    let bs_template = paths_to_balance_sheet_assets(
+        get_paths(&mut asset_series, parse_asset_annotation)?,
+        get_paths(&mut liabilities_series, parse_liability_annotation)?,
+    );
+
+    fill_observations(&mut obs, &bs_template, &mut asset_series, parse_asset_annotation, &ConceptType::Assets)?;
+    fill_observations(&mut obs, &bs_template, &mut liabilities_series, parse_liability_annotation, &ConceptType::Liabilities)?;
 
     Ok(obs)
 }
@@ -274,9 +369,9 @@ mod tests {
     fn annotation_to_path_test() {
         assert_eq!(
             "Assets",
-            parse_annotation("Assets: Total Assets: Total assets: Wednesday level")
+            parse_asset_annotation("Assets: Total Assets: Total assets: Wednesday level")
         );
         assert_eq!("Assets/Liquidity and Credit Facilities/Net portfolio holdings of Commercial Paper Funding Facility LLC",
-            parse_annotation("Discontinued: Assets: Liquidity and Credit Facilities: Net portfolio holdings of Commercial Paper Funding Facility LLC: Wednesday level"));
+            parse_asset_annotation("Discontinued: Assets: Liquidity and Credit Facilities: Net portfolio holdings of Commercial Paper Funding Facility LLC: Wednesday level"));
     }
 }

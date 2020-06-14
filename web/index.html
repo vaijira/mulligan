@@ -62,7 +62,7 @@
     }
 
     function main() {
-      d3.csv('tmp/observations.csv')
+      d3.csv('tmp/assets.csv')
         .then(function (data) {
           var data = Object.assign(data, {y: "Millions USD"});
 
@@ -97,7 +97,7 @@
 
           var xAxis = g => g
             .attr("transform", `translate(0,${height - margin.bottom})`)
-            .call(d3.axisBottom(x).ticks(width / 80).tickSizeOuter(0));
+            .call(d3.axisBottom(x).ticks(width / 40).tickSizeOuter(0));
 
           var yAxis = g => g
             .attr("transform", `translate(${margin.left},0)`)
@@ -122,7 +122,8 @@
 </head>
 
 <body onload="main();">
-  <h1>Federal reserve assets</h1>
+  <h1>Federal reserve assets.</h1>
+  <h2><a href="tmp/assets.csv" target="_blank" rel="nofollow">Download CSV File series in case you want to explore them in a spreadsheet.</a></h2>
   <div style="display: flex; align-items: center; margin-left: 0px; min-height: 33px; font: 10px sans-serif;">
     <div id="fed-assets-items" style="width: 100%; columns: 180px;"></div>
   </div>
