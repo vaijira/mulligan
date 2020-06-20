@@ -1,18 +1,18 @@
-.fed-assets-item {
+.fed-concept-item {
   break-inside: avoid;
   display: flex;
   align-items: center;
   padding-bottom: 1px;
 }
 
-.fed-assets-label {
+.fed-concept-label {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: calc(100% - 15px - 0.5em);
 }
 
-.fed-assets-swatch {
+.fed-concept-swatch {
   width: 15px;
   height: 15px;
   margin: 0 0.5em 0 0;
