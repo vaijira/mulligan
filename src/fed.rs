@@ -23,11 +23,9 @@ pub const H41_STRUCT_XML: &str = "H41_struct.xml";
 /// File name containing the XML H.4.1 data.
 pub const H41_DATA_XML: &str = "H41_data.xml";
 
-/// Parent series for FED H.4.1 assets
 pub(crate) const FED_ASSETS_SERIES_NAME: &str = "RESPPA_N.WW";
-
-/// Parent series for FED H.4.1 liabilities
 pub(crate) const FED_LIABILITIES_SERIES_NAME: &str = "RESPPLL_N.WW";
+pub(crate) const FED_CAPITAL_SERIES_NAME: &str = "RESPPLC_N.WW";
 
 const STRUCTURE_NS: &str = "http://www.SDMX.org/resources/SDMXML/schemas/v1_0/structure";
 const KF_NS: &str = "http://www.federalreserve.gov/structure/compact/H41_H41";
@@ -35,7 +33,7 @@ const FRB_NS: &str = "http://www.federalreserve.gov/structure/compact/common";
 const COMMON_NS: &str = "http://www.SDMX.org/resources/SDMXML/schemas/v1_0/common";
 
 /*
-    FED ASSETS Series discarded for assets in balance sheet
+    FED ASSETS Series discarded for assets in balance sheet:
 
     We have a series for gold and another for special drawing rights (duplicated)
     RESPPAR_N.WW -> subcategory(ZZZZ): Other -> component(GCA): Gold certificate account and SDR account
@@ -86,7 +84,7 @@ const COMMON_NS: &str = "http://www.SDMX.org/resources/SDMXML/schemas/v1_0/commo
 
     ************************************************************************************
 
-    LIABILITIES SERIES DISCARDED
+    LIABILITIES SERIES DISCARDED:
 
     "RESPPLLDE_N.WW" it seems a duplicate of "RESPPLLDD_N.WW"
 
@@ -97,6 +95,10 @@ const COMMON_NS: &str = "http://www.SDMX.org/resources/SDMXML/schemas/v1_0/commo
     "RESPPLLNH_N.WW"  and "RESPPLLNO_N.WW"  redundant because of  "RESPPLLN_N.WW"
 
     "RESPPLLOO_N.WW" redundant because of "RESPPLLO_N.WW"
+
+    *************************************************************************************************
+
+    CAPITAL SERIES DISCARDED
 */
 lazy_static! {
     static ref SERIES_TO_FILTER_OUT: HashSet<&'static str> = {
@@ -178,6 +180,21 @@ fn get_liabilities_series<'a>(doc: &'a Document<'_>) -> Vec<Node<'a, 'a>> {
         .collect()
 }
 
+fn get_capital_series<'a>(doc: &'a Document<'_>) -> Vec<Node<'a, 'a>> {
+    doc.descendants()
+        .filter(|n| {
+            n.is_element()
+                && n.has_tag_name((KF_NS, SERIES_TAG))
+                && n.attribute("CATEGORY") == Some("LIABCAP")
+                && n.attribute("SUBCATEGORY") == Some("CAP")
+                && n.attribute("DISTRIBUTION") == Some("TOT")
+                && n.attribute("SERIESTYPE") == Some("L")
+                && n.attribute("FREQ") == Some("19")
+                && !SERIES_TO_FILTER_OUT.contains(n.attribute("SERIES_NAME").unwrap())
+        })
+        .collect()
+}
+
 fn get_node_elements<'a>(serie: &'a Node<'_, '_>, ns: &str, tag: &str) -> Vec<Node<'a, 'a>> {
     serie
         .descendants()
@@ -229,7 +246,10 @@ fn parse_asset_annotation(annotation: &str) -> String {
 
 fn parse_liability_annotation(annotation: &str) -> String {
     let path = annotation.replace(": Wednesday level", "");
-    let path = path.replace(": Deposits with F.R. Banks, other than reserve balances", ": Deposits");
+    let path = path.replace(
+        ": Deposits with F.R. Banks, other than reserve balances",
+        ": Deposits",
+    );
     let path = path.replace("Liabilities and Capital: ", "");
     let path = path.replace(": All", "");
     let path = path.replace("Discontinued: ", "");
@@ -240,9 +260,22 @@ fn parse_liability_annotation(annotation: &str) -> String {
     path
 }
 
+fn parse_capital_annotation(annotation: &str) -> String {
+    let path = annotation.replace(": Wednesday level", "");
+    let path = path.replace("Liabilities and Capital: ", "");
+    let path = path.replace(": All", "");
+    let path = path.replace("Discontinued: ", "");
+    let path = path.replace(": ", "/");
+    if path == "Capital/Total capital" {
+        return types::CAPITAL_PATH.to_string();
+    }
+    path
+}
+
 fn paths_to_balance_sheet_assets(
     assets_paths: Trie<String, String>,
     liabilities_paths: Trie<String, String>,
+    capital_paths: Trie<String, String>,
 ) -> BalanceSheet {
     let mut assets = Concept::new(types::ASSETS_PATH, FED_ASSETS_SERIES_NAME);
 
@@ -262,10 +295,16 @@ fn paths_to_balance_sheet_assets(
         liabilities.insert_concept(path, series_name);
     }
 
-    BalanceSheet::new(
-        assets,
-        liabilities,
-    )
+    let mut capital = Concept::new(types::CAPITAL_PATH, FED_CAPITAL_SERIES_NAME);
+
+    for (path, series_name) in capital_paths.iter() {
+        if path == types::CAPITAL_PATH {
+            continue;
+        }
+        capital.insert_concept(path, series_name);
+    }
+
+    BalanceSheet::new(assets, liabilities, capital)
 }
 
 #[allow(dead_code)]
@@ -309,7 +348,6 @@ fn get_paths(
     Ok(paths)
 }
 
-
 fn fill_observations(
     obs: &mut ObservationMap,
     bs_template: &BalanceSheet,
@@ -349,14 +387,35 @@ pub fn parse_h41_data(text: &String) -> Result<ObservationMap, Box<dyn std::erro
 
     let mut asset_series: Vec<Node<'_, '_>> = get_asset_series(&doc);
     let mut liabilities_series: Vec<Node<'_, '_>> = get_liabilities_series(&doc);
+    let mut capital_series: Vec<Node<'_, '_>> = get_capital_series(&doc);
 
     let bs_template = paths_to_balance_sheet_assets(
         get_paths(&mut asset_series, parse_asset_annotation)?,
         get_paths(&mut liabilities_series, parse_liability_annotation)?,
+        get_paths(&mut capital_series, parse_capital_annotation)?,
     );
 
-    fill_observations(&mut obs, &bs_template, &mut asset_series, parse_asset_annotation, &ConceptType::Assets)?;
-    fill_observations(&mut obs, &bs_template, &mut liabilities_series, parse_liability_annotation, &ConceptType::Liabilities)?;
+    fill_observations(
+        &mut obs,
+        &bs_template,
+        &mut asset_series,
+        parse_asset_annotation,
+        &ConceptType::Assets,
+    )?;
+    fill_observations(
+        &mut obs,
+        &bs_template,
+        &mut liabilities_series,
+        parse_liability_annotation,
+        &ConceptType::Liabilities,
+    )?;
+    fill_observations(
+        &mut obs,
+        &bs_template,
+        &mut capital_series,
+        parse_capital_annotation,
+        &ConceptType::Capital,
+    )?;
 
     Ok(obs)
 }

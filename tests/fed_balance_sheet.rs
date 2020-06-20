@@ -62,6 +62,12 @@ Liabilities                                                              7058402
     Others                                                                  4326
 "#;
 
+const CAPITAL_20200527: &str = r#"
+Capital                                                                    38914
+  Capital paid in                                                          32089
+  Surplus                                                                   6825
+"#;
+
 const ASSETS_20200520: &str = r#"
 Assets                                                                   7037258
   Central Bank Liquidity Swaps                                      
@@ -107,6 +113,12 @@ Liabilities                                                              6998365
   Reverse repurchase agreements                                           266649
     Foreign official and international accounts                           256923
     Others                                                                  9726
+"#;
+
+const CAPITAL_20200520: &str = r#"
+Capital                                                                    38894
+  Capital paid in                                                          32069
+  Surplus                                                                   6825
 "#;
 
 const ASSETS_20200513: &str = r#"
@@ -155,6 +167,12 @@ Liabilities                                                              6895336
     Others                                                                 13825
 "#;
 
+const CAPITAL_20200513: &str = r#"
+Capital                                                                    38891
+  Capital paid in                                                          32066
+  Surplus                                                                   6825
+"#;
+
 const ASSETS_20200506: &str = r#"
 Assets                                                                   6721420
   Central Bank Liquidity Swaps                                      
@@ -198,6 +216,12 @@ Liabilities                                                              6682549
   Reverse repurchase agreements                                           265206
     Foreign official and international accounts                           264031
     Others                                                                  1175
+"#;
+
+const CAPITAL_20200506: &str = r#"
+Capital                                                                    38871
+  Capital paid in                                                          32046
+  Surplus                                                                   6825
 "#;
 
 const ASSETS_20200429: &str = r#"
@@ -245,40 +269,146 @@ Liabilities                                                              6617091
     Others                                                                  1450
 "#;
 
+const CAPITAL_20200429: &str = r#"
+Capital                                                                    38838
+  Capital paid in                                                          32013
+  Surplus                                                                   6825
+"#;
+
 #[test]
 fn balance_sheets_2020() {
     let h41_data_text = std::fs::read_to_string(FED_XML_2020_DATA_PATH).unwrap();
     let observations = fed::parse_h41_data(&h41_data_text).unwrap();
 
     let date = NaiveDate::parse_from_str("2020-05-27", "%Y-%m-%d").unwrap();
-    let displayed_assets = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Assets));
+    let displayed_assets = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Assets)
+    );
     assert_by_lines(ASSETS_20200527, &displayed_assets);
-    let displayed_liabilities = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Liabilities));
+    let displayed_liabilities = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Liabilities)
+    );
     assert_by_lines(LIABILITIES_20200527, &displayed_liabilities);
+    let displayed_capital = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Capital)
+    );
+    assert_by_lines(CAPITAL_20200527, &displayed_capital);
 
     let date = NaiveDate::parse_from_str("2020-05-20", "%Y-%m-%d").unwrap();
-    let displayed_assets = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Assets));
+    let displayed_assets = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Assets)
+    );
     assert_by_lines(ASSETS_20200520, &displayed_assets);
-    let displayed_liabilities = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Liabilities));
+    let displayed_liabilities = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Liabilities)
+    );
     assert_by_lines(LIABILITIES_20200520, &displayed_liabilities);
+    let displayed_capital = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Capital)
+    );
+    assert_by_lines(CAPITAL_20200520, &displayed_capital);
 
     let date = NaiveDate::parse_from_str("2020-05-13", "%Y-%m-%d").unwrap();
-    let displayed_assets = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Assets));
+    let displayed_assets = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Assets)
+    );
     assert_by_lines(ASSETS_20200513, &displayed_assets);
-    let displayed_liabilities = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Liabilities));
+    let displayed_liabilities = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Liabilities)
+    );
     assert_by_lines(LIABILITIES_20200513, &displayed_liabilities);
+    let displayed_capital = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Capital)
+    );
+    assert_by_lines(CAPITAL_20200513, &displayed_capital);
 
     let date = NaiveDate::parse_from_str("2020-05-06", "%Y-%m-%d").unwrap();
-    let displayed_assets = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Assets));
+    let displayed_assets = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Assets)
+    );
     assert_by_lines(ASSETS_20200506, &displayed_assets);
-    let displayed_liabilities = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Liabilities));
+    let displayed_liabilities = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Liabilities)
+    );
     assert_by_lines(LIABILITIES_20200506, &displayed_liabilities);
+    let displayed_capital = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Capital)
+    );
+    assert_by_lines(CAPITAL_20200506, &displayed_capital);
 
     let date = NaiveDate::parse_from_str("2020-04-29", "%Y-%m-%d").unwrap();
-    let displayed_assets = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Assets));
+    let displayed_assets = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Assets)
+    );
     assert_by_lines(ASSETS_20200429, &displayed_assets);
-    let displayed_liabilities = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Liabilities));
+    let displayed_liabilities = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Liabilities)
+    );
     assert_by_lines(LIABILITIES_20200429, &displayed_liabilities);
+    let displayed_capital = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Capital)
+    );
+    assert_by_lines(CAPITAL_20200429, &displayed_capital);
 }
 
 const ASSETS_20100310: &str = r#"
@@ -332,16 +462,43 @@ Liabilities                                                              2229730
     Foreign official and international accounts                            55903
 "#;
 
+const CAPITAL_20100310: &str = r#"
+Capital                                                                    52818
+  Capital paid in                                                          26076
+  Other capital accounts                                                    1353
+  Surplus                                                                  25389
+"#;
+
 #[test]
 fn balance_sheets_2010() {
     let h41_data_text = std::fs::read_to_string(FED_XML_2010_DATA_PATH).unwrap();
     let observations = fed::parse_h41_data(&h41_data_text).unwrap();
 
     let date = NaiveDate::parse_from_str("2010-03-10", "%Y-%m-%d").unwrap();
-    let displayed_assets = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Assets));
+    let displayed_assets = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Assets)
+    );
     assert_by_lines(ASSETS_20100310, &displayed_assets);
-    let displayed_liabilities = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Liabilities));
+    let displayed_liabilities = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Liabilities)
+    );
     assert_by_lines(LIABILITIES_20100310, &displayed_liabilities);
+    let displayed_capital = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Capital)
+    );
+    assert_by_lines(CAPITAL_20100310, &displayed_capital);
 }
 
 const ASSETS_20060308: &str = r#"
@@ -379,14 +536,41 @@ Liabilities                                                               812877
     Foreign official and international accounts                            23810
 "#;
 
+const CAPITAL_20060308: &str = r#"
+Capital                                                                    27650
+  Capital paid in                                                          13730
+  Other capital accounts                                                    1019
+  Surplus                                                                  12901
+"#;
+
 #[test]
 fn balance_sheets_2006() {
     let h41_data_text = std::fs::read_to_string(FED_XML_2006_DATA_PATH).unwrap();
     let observations = fed::parse_h41_data(&h41_data_text).unwrap();
 
     let date = NaiveDate::parse_from_str("2006-03-08", "%Y-%m-%d").unwrap();
-    let displayed_assets = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Assets));
+    let displayed_assets = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Assets)
+    );
     assert_by_lines(ASSETS_20060308, &displayed_assets);
-    let displayed_liabilities = format!("{}", observations.get(&date).unwrap().get_concept(&ConceptType::Liabilities));
+    let displayed_liabilities = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Liabilities)
+    );
     assert_by_lines(LIABILITIES_20060308, &displayed_liabilities);
+    let displayed_capital = format!(
+        "{}",
+        observations
+            .get(&date)
+            .unwrap()
+            .get_concept(&ConceptType::Capital)
+    );
+    assert_by_lines(CAPITAL_20060308, &displayed_capital);
 }

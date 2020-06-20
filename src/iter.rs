@@ -67,7 +67,7 @@ mod tests {
 
     #[test]
     fn concept_iterator_test() {
-        let mut assets = Concept::new(ASSETS_PATH, fed::FED_ASSETS_SERIES_NAME);
+        let mut assets = Concept::new(types::ASSETS_PATH, fed::FED_ASSETS_SERIES_NAME);
         assets.insert_concept("Assets/Liquidity and Credit Facilities/Net portfolio holdings of Commercial Paper Funding Facility LLC", types::UNDEFINED_SERIES_NAME);
         let mut it = assets.iter();
         assert_eq!(it.next().unwrap().name(), "Assets");

@@ -13,6 +13,7 @@ const H41_FILE_PATH: &str = "/tmp/h41.zip";
 const OBS_JSON_FILE_NAME: &str = "observations.json";
 const ASSETS_CSV_FILE_NAME: &str = "assets.csv";
 const LIABILITIES_CSV_FILE_NAME: &str = "liabilities.csv";
+const CAPITAL_CSV_FILE_NAME: &str = "capital.csv";
 const CSV_SEPARATOR_STR: &str = ",";
 
 #[tokio::main]
@@ -200,7 +201,14 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     create_observation_csv_file(&assets_csv_file, &observations, &ConceptType::Assets)?;
 
     let liabilities_csv_file = format!("{}/{}", output_dir, LIABILITIES_CSV_FILE_NAME);
-    create_observation_csv_file(&liabilities_csv_file, &observations, &ConceptType::Liabilities)?;
+    create_observation_csv_file(
+        &liabilities_csv_file,
+        &observations,
+        &ConceptType::Liabilities,
+    )?;
+
+    let capital_csv_file = format!("{}/{}", output_dir, CAPITAL_CSV_FILE_NAME);
+    create_observation_csv_file(&capital_csv_file, &observations, &ConceptType::Capital)?;
 
     Ok(())
 }

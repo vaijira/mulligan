@@ -2,11 +2,9 @@ use serde::{Deserialize, Serialize};
 use std::fmt;
 use std::usize;
 
-/// Parent path for assets.
-pub const ASSETS_PATH: &str = "Assets";
-
-/// Parent path for liabilities
-pub const LIABILITIES_PATH: &str = "Liabilities";
+pub(crate) const ASSETS_PATH: &str = "Assets";
+pub(crate) const LIABILITIES_PATH: &str = "Liabilities";
+pub(crate) const CAPITAL_PATH: &str = "Capital";
 
 /// Use for intermediate series that contains children but no data.
 pub const UNDEFINED_SERIES_NAME: &str = "UNDEFINED";
@@ -88,7 +86,7 @@ impl Concept {
 
     /// update the concept specified by path with its accounting value.
     pub fn update_concept_value(&mut self, path: &str, value: i64) {
-        if path == ASSETS_PATH || path == LIABILITIES_PATH {
+        if path == ASSETS_PATH || path == LIABILITIES_PATH || path == CAPITAL_PATH {
             self.value = value;
             return;
         }
@@ -164,7 +162,8 @@ pub enum ConceptType {
     Assets,
     /// Liabilities in balance sheet
     Liabilities,
-    // Capital,
+    /// Capital in balance sheet
+    Capital,
 }
 
 /// Balance sheet containing assets, liabilities and capital.
@@ -172,15 +171,16 @@ pub enum ConceptType {
 pub struct BalanceSheet {
     assets: Concept,
     liabilities: Concept,
-    // capital: Concept,
+    capital: Concept,
 }
 
 impl BalanceSheet {
     /// Create new balance sheet from concepts.
-    pub fn new(assets: Concept, liabilities: Concept) -> BalanceSheet {
+    pub fn new(assets: Concept, liabilities: Concept, capital: Concept) -> BalanceSheet {
         BalanceSheet {
             assets,
             liabilities,
+            capital,
         }
     }
 
@@ -189,7 +189,7 @@ impl BalanceSheet {
         match ctype {
             ConceptType::Assets => &self.assets,
             ConceptType::Liabilities => &self.liabilities,
-            // Capital => &self.capital,
+            ConceptType::Capital => &self.capital,
         }
     }
 
@@ -198,14 +198,18 @@ impl BalanceSheet {
         match ctype {
             ConceptType::Assets => &mut self.assets,
             ConceptType::Liabilities => &mut self.liabilities,
-            // Capital => &mut self.capital,
+            ConceptType::Capital => &mut self.capital,
         }
     }
 }
 
 impl fmt::Display for BalanceSheet {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "Balance sheet\n{}\n{}\n", self.assets, self.liabilities)
+        write!(
+            f,
+            "Balance sheet\n{}\n{}\n{}\n",
+            self.assets, self.liabilities, self.capital
+        )
     }
 }
 

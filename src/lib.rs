@@ -13,6 +13,5 @@ pub mod fed;
 mod iter;
 mod types;
 
-pub use self::types::ASSETS_PATH;
 pub use self::types::{BalanceSheet, Concept, ConceptType};
 pub use chrono::NaiveDate;
