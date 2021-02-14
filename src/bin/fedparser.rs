@@ -173,8 +173,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let matches = clap_app!(myapp =>
         (version: "0.1")
         (author: "Jorge Perez Burgos <vaijira@gmail.com>")
-        (about: "Download H41 data from federal reserve website.
-    It generates rust source code for structures and generates RON files for data")
+        (about: "Download H41 data from federal reserve website.")
         (@arg OUTPUT_DIR: -o --output +takes_value "Sets the output directory, default: ./tmp")
     )
     .get_matches();
