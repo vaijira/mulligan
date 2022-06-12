@@ -308,8 +308,8 @@ fn paths_to_balance_sheet_assets(
 }
 
 #[allow(dead_code)]
-fn parse_h41_struct(text: &String) -> Result<ConceptMap, Box<dyn std::error::Error>> {
-    let doc = Document::parse(&text)?;
+fn parse_h41_struct(text: &str) -> Result<ConceptMap, Box<dyn std::error::Error>> {
+    let doc = Document::parse(text)?;
     let root = doc.root();
     let mut concepts: ConceptMap = HashMap::new();
     let mut codelists = get_node_elements(&root, STRUCTURE_NS, CODE_LIST_TAG);
@@ -319,7 +319,7 @@ fn parse_h41_struct(text: &String) -> Result<ConceptMap, Box<dyn std::error::Err
             .attribute("id")
             .expect("CodeList XML node should have an id attribute");
         concepts.insert(id.to_string(), HashMap::new());
-        let mut codes = get_children_node_elements(&codelist, STRUCTURE_NS, CODE_TAG);
+        let mut codes = get_children_node_elements(codelist, STRUCTURE_NS, CODE_TAG);
 
         for code in &mut codes {
             let key = code
@@ -341,7 +341,7 @@ fn get_paths(
 
     for serie in series {
         let serie_name = serie.attribute("SERIES_NAME").unwrap();
-        let annotation = get_annotation(&serie);
+        let annotation = get_annotation(serie);
         paths.insert(parse_fn(&annotation), serie_name.to_string());
     }
 
@@ -356,9 +356,9 @@ fn fill_observations(
     ctype: &ConceptType,
 ) -> Result<(), Box<dyn std::error::Error>> {
     for serie in series {
-        let annotation = get_annotation(&serie);
+        let annotation = get_annotation(serie);
         let path = parse_fn(&annotation);
-        let mut observations = get_children_node_elements(&serie, FRB_NS, OBS_TAG);
+        let mut observations = get_children_node_elements(serie, FRB_NS, OBS_TAG);
         for observation in &mut observations {
             let date = NaiveDate::parse_from_str(
                 observation.attribute("TIME_PERIOD").unwrap(),
@@ -370,7 +370,7 @@ fn fill_observations(
                 "0"
             };
             obs.entry(date)
-                .or_insert(bs_template.clone())
+                .or_insert_with(|| bs_template.clone())
                 .get_concept_mut(ctype)
                 .update_concept_value(&path, value.parse::<i64>().unwrap_or(0));
         }
@@ -381,7 +381,7 @@ fn fill_observations(
 
 /// Parse H.4.1 fed XML data file to return an ordered map with a
 /// balance sheet for each period of time.
-pub fn parse_h41_data(text: &String) -> Result<ObservationMap, Box<dyn std::error::Error>> {
+pub fn parse_h41_data(text: &str) -> Result<ObservationMap, Box<dyn std::error::Error>> {
     let doc = Document::parse(text)?;
     let mut obs: ObservationMap = BTreeMap::new();
 

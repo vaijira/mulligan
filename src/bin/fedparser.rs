@@ -1,4 +1,4 @@
-use clap::clap_app;
+use clap::{arg, Command};
 use mulligan::fed;
 use mulligan::fed::ObservationMap;
 use mulligan::{Concept, ConceptType, NaiveDate};
@@ -38,7 +38,7 @@ fn extract_zipfile(file_path: &str, prepend_path: &str) -> Result<(), Box<dyn st
     let mut archive = zip::ZipArchive::new(file).unwrap();
     for i in 0..archive.len() {
         let mut file = archive.by_index(i).unwrap();
-        let outpath = Path::new(prepend_path).join(file.sanitized_name());
+        let outpath = Path::new(prepend_path).join(file.mangled_name());
 
         {
             let comment = file.comment();
@@ -145,7 +145,7 @@ fn create_observation_csv_file(
     obs: &ObservationMap,
     ctype: &ConceptType,
 ) -> Result<(), Box<dyn std::error::Error>> {
-    let header = csv_header(&obs.iter().next().unwrap().1.get_concept(ctype))?;
+    let header = csv_header(obs.iter().next().unwrap().1.get_concept(ctype))?;
 
     let mut dest = {
         println!(
@@ -160,7 +160,7 @@ fn create_observation_csv_file(
     dest.write_all(header.as_bytes())?;
     dest.write_all(b"\n")?;
     for (obs_date, obs_balance_sheet) in obs {
-        let row = csv_row(obs_date, &obs_balance_sheet.get_concept(ctype))?;
+        let row = csv_row(obs_date, obs_balance_sheet.get_concept(ctype))?;
         io::copy(&mut row.as_bytes(), &mut dest)?;
     }
 
@@ -170,13 +170,12 @@ fn create_observation_csv_file(
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let matches = clap_app!(myapp =>
-        (version: "0.1")
-        (author: "Jorge Perez Burgos <vaijira@gmail.com>")
-        (about: "Download H41 data from federal reserve website.")
-        (@arg OUTPUT_DIR: -o --output +takes_value "Sets the output directory, default: ./tmp")
-    )
-    .get_matches();
+    let matches = Command::new("fedparser")
+        .version("0.2")
+        .author("Jorge Perez Burgos <vaijira@gmail.com>")
+        .about("Download H41 data from federal reserve website.")
+        .arg(arg!(-o --output [OUTPUT_DIR] "Sets the output directory, default: /tmp"))
+        .get_matches();
 
     // Gets a value for config if supplied by user, or defaults to "default.conf"
     let output_dir = matches.value_of("OUTPUT_DIR").unwrap_or("./tmp");

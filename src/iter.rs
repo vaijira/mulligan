@@ -12,7 +12,7 @@ impl<'a> Iter<'a> {
     // TODO: make this private somehow (and same for the other iterators).
     pub fn new(root: &'a Concept) -> Iter<'a> {
         Iter {
-            root: root,
+            root,
             root_visited: false,
             stack: vec![],
         }

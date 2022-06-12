@@ -28,11 +28,11 @@ pub struct Concept {
 
 impl Concept {
     /// concept name.
-    pub fn name<'a>(&'a self) -> &'a str {
+    pub fn name(&self) -> &str {
         if let Some(i) = self.path.rfind(PATH_SEPARATOR) {
             return &self.path[i + 1..];
         }
-        return &self.path[..];
+        &self.path[..]
     }
 
     /// Create a new concept.
@@ -47,7 +47,7 @@ impl Concept {
 
     /// Return true if concept is a leaf concept.
     pub fn is_leaf(&self) -> bool {
-        self.children.len() == 0
+        self.children.is_empty()
     }
 
     /// Insert a concept inside the concept tree structure
@@ -65,13 +65,13 @@ impl Concept {
                 let child_pos = concept
                     .children
                     .iter()
-                    .position(|c| c.path == &path[..i])
+                    .position(|c| c.path == path[..i])
                     .map_or(usize::MAX, |p| p);
                 if child_pos != usize::MAX {
                     concept = concept
                         .children
                         .iter_mut()
-                        .find(|c| c.path == &path[..i])
+                        .find(|c| c.path == path[..i])
                         .unwrap();
                 } else {
                     concept
@@ -102,7 +102,7 @@ impl Concept {
                 concept = concept
                     .children
                     .iter_mut()
-                    .find(|c| c.path == &path[..i])
+                    .find(|c| c.path == path[..i])
                     .unwrap();
             }
         }
@@ -115,7 +115,7 @@ impl Concept {
     }
 
     /// Provides the iterator over concepts
-    pub fn iter<'a>(&'a self) -> crate::iter::Iter<'a> {
+    pub fn iter(&self) -> crate::iter::Iter<'_> {
         crate::iter::Iter::new(self)
     }
 }
@@ -123,27 +123,20 @@ impl Concept {
 impl fmt::Display for Concept {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         fn recurse_concepts(c: &Concept, i: usize, fo: &mut fmt::Formatter<'_>) -> fmt::Result {
-            if !c.is_leaf() && !c.children.is_empty() {
-                if c.children
+            if !c.is_leaf()
+                && !c.children.is_empty()
+                && c.children
                     .iter()
                     .filter(|x| x.is_leaf() && x.value == 0)
                     .count()
                     == c.children.len()
-                {
-                    return Ok(());
-                }
+            {
+                return Ok(());
             }
             if c.series_name == UNDEFINED_SERIES_NAME && c.value == 0 {
-                write!(fo, "{:<68.68}\n", " ".repeat(i * 2) + c.name())?;
-            } else {
-                if !(c.is_leaf() && c.value == 0) {
-                    write!(
-                        fo,
-                        "{:<68.68}{:>12}\n",
-                        " ".repeat(i * 2) + c.name(),
-                        c.value
-                    )?;
-                }
+                writeln!(fo, "{:<68.68}", " ".repeat(i * 2) + c.name())?;
+            } else if !(c.is_leaf() && c.value == 0) {
+                writeln!(fo, "{:<68.68}{:>12}", " ".repeat(i * 2) + c.name(), c.value)?;
             }
 
             for child in &c.children {
@@ -151,7 +144,7 @@ impl fmt::Display for Concept {
             }
             Ok(())
         }
-        write!(f, "\n")?;
+        writeln!(f)?;
         recurse_concepts(self, 0, f)
     }
 }
