@@ -47,7 +47,7 @@ fn extract_zipfile(file_path: &str, prepend_path: &str) -> Result<(), Box<dyn st
             }
         }
 
-        if (&*file.name()).ends_with('/') {
+        if (*file.name()).ends_with('/') {
             println!(
                 "File {} extracted to \"{}\"",
                 i,
@@ -63,7 +63,7 @@ fn extract_zipfile(file_path: &str, prepend_path: &str) -> Result<(), Box<dyn st
             );
             if let Some(p) = outpath.parent() {
                 if !p.exists() {
-                    fs::create_dir_all(&p).unwrap();
+                    fs::create_dir_all(p).unwrap();
                 }
             }
             let mut outfile = fs::File::create(&outpath).unwrap();
@@ -189,7 +189,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     }
 
     let h41_data_file = format!("{}/{}", output_dir, fed::H41_DATA_XML);
-    let h41_data_text = std::fs::read_to_string(&h41_data_file)?;
+    let h41_data_text = std::fs::read_to_string(h41_data_file)?;
     let observations = fed::parse_h41_data(&h41_data_text)?;
 
     let obs_json_file = format!("{}/{}", output_dir, OBS_JSON_FILE_NAME);

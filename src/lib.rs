@@ -1,4 +1,4 @@
-#![warn(rust_2018_idioms, missing_docs, warnings)]
+#![warn(rust_2018_idioms, missing_docs, unused_extern_crates, warnings)]
 
 //! Library to simulate, collect and organize finance information.
 //!
