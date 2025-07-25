@@ -3,12 +3,12 @@ use actix_web::{get, middleware, web, App, HttpRequest, HttpResponse, HttpServer
 
 #[get("/resource1/{name}/index.html")]
 async fn index(req: HttpRequest, name: web::Path<String>) -> String {
-    println!("REQ: {:?}", req);
-    format!("Hello: {}!\r\n", name)
+    println!("REQ: {req:?}");
+    format!("Hello: {name}!\r\n")
 }
 
 async fn index_async(req: HttpRequest) -> &'static str {
-    println!("REQ: {:?}", req);
+    println!("REQ: {req:?}");
     "Hello world!\r\n"
 }
 

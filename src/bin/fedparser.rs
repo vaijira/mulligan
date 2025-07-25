@@ -19,7 +19,7 @@ const CSV_SEPARATOR_STR: &str = ",";
 #[tokio::main]
 async fn download_file(target: &str, dst_path: &str) -> Result<(), Box<dyn std::error::Error>> {
     let mut dest = {
-        println!("Temporary file will be located under: '{:?}'", dst_path);
+        println!("Temporary file will be located under: '{dst_path:?}'");
         File::create(dst_path)?
     };
 
@@ -27,7 +27,7 @@ async fn download_file(target: &str, dst_path: &str) -> Result<(), Box<dyn std::
     let bytes = response.bytes().await?;
     let mut data: &[u8] = bytes.as_ref();
     io::copy(&mut data, &mut dest)?;
-    println!("Downloaded temporal file: '{:?}'", dst_path);
+    println!("Downloaded temporal file: '{dst_path:?}'");
 
     Ok(())
 }
@@ -43,21 +43,16 @@ fn extract_zipfile(file_path: &str, prepend_path: &str) -> Result<(), Box<dyn st
         {
             let comment = file.comment();
             if !comment.is_empty() {
-                println!("File {} comment: {}", i, comment);
+                println!("File {i} comment: {comment}");
             }
         }
 
         if (*file.name()).ends_with('/') {
-            println!(
-                "File {} extracted to \"{}\"",
-                i,
-                outpath.as_path().display()
-            );
+            println!("File {i} extracted to \"{}\"", outpath.as_path().display());
             fs::create_dir_all(&outpath).unwrap();
         } else {
             println!(
-                "File {} extracted to \"{}\" ({} bytes)",
-                i,
+                "File {i} extracted to \"{}\" ({} bytes)",
                 outpath.as_path().display(),
                 file.size()
             );
@@ -94,10 +89,7 @@ fn create_observation_json_file(
     let json = serde_json::to_string_pretty(&obs).unwrap();
 
     let mut dest = {
-        println!(
-            "observations json file will be located under: '{:?}'",
-            dst_path
-        );
+        println!("observations json file will be located under: '{dst_path:?}'");
         File::create(dst_path)?
     };
 
@@ -114,7 +106,7 @@ fn csv_header(c: &Concept) -> Result<String, Box<dyn std::error::Error>> {
         .map(|s| {
             let name = s.name();
             if name.contains(CSV_SEPARATOR_STR) {
-                format!("\"{}\"", name)
+                format!("\"{name}\"")
             } else {
                 name.to_string()
             }
@@ -148,10 +140,7 @@ fn create_observation_csv_file(
     let header = csv_header(obs.iter().next().unwrap().1.get_concept(ctype))?;
 
     let mut dest = {
-        println!(
-            "observations csv file will be located under: '{:?}'",
-            dst_path
-        );
+        println!("observations csv file will be located under: '{dst_path:?}'");
         File::create(dst_path)?
     };
 
@@ -179,33 +168,33 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     // Gets a value for config if supplied by user, or defaults to "default.conf"
     let output_dir = matches.value_of("OUTPUT_DIR").unwrap_or("./tmp");
-    println!("Value for output dir: {}", output_dir);
+    println!("Value for output dir: {output_dir}");
 
     if path_exists(output_dir) {
-        println!("Directory {} already exists, skip downloading", output_dir);
+        println!("Directory {output_dir} already exists, skip downloading");
     } else {
         download_file(mulligan::fed::H41_FED_URL, H41_FILE_PATH)?;
         extract_zipfile(H41_FILE_PATH, output_dir)?;
     }
 
-    let h41_data_file = format!("{}/{}", output_dir, fed::H41_DATA_XML);
+    let h41_data_file = format!("{output_dir}/{}", fed::H41_DATA_XML);
     let h41_data_text = std::fs::read_to_string(h41_data_file)?;
     let observations = fed::parse_h41_data(&h41_data_text)?;
 
-    let obs_json_file = format!("{}/{}", output_dir, OBS_JSON_FILE_NAME);
+    let obs_json_file = format!("{output_dir}/{OBS_JSON_FILE_NAME}");
     create_observation_json_file(&obs_json_file, &observations)?;
 
-    let assets_csv_file = format!("{}/{}", output_dir, ASSETS_CSV_FILE_NAME);
+    let assets_csv_file = format!("{output_dir}/{ASSETS_CSV_FILE_NAME}");
     create_observation_csv_file(&assets_csv_file, &observations, &ConceptType::Assets)?;
 
-    let liabilities_csv_file = format!("{}/{}", output_dir, LIABILITIES_CSV_FILE_NAME);
+    let liabilities_csv_file = format!("{output_dir}/{LIABILITIES_CSV_FILE_NAME}");
     create_observation_csv_file(
         &liabilities_csv_file,
         &observations,
         &ConceptType::Liabilities,
     )?;
 
-    let capital_csv_file = format!("{}/{}", output_dir, CAPITAL_CSV_FILE_NAME);
+    let capital_csv_file = format!("{output_dir}/{CAPITAL_CSV_FILE_NAME}");
     create_observation_csv_file(&capital_csv_file, &observations, &ConceptType::Capital)?;
 
     Ok(())

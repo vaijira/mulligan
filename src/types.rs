@@ -1,6 +1,5 @@
 use serde::{Deserialize, Serialize};
 use std::fmt;
-use std::usize;
 
 pub(crate) const ASSETS_PATH: &str = "Assets";
 pub(crate) const LIABILITIES_PATH: &str = "Liabilities";
