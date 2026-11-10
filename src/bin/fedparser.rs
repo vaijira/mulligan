@@ -38,7 +38,7 @@ fn extract_zipfile(file_path: &str, prepend_path: &str) -> Result<(), Box<dyn st
     let mut archive = zip::ZipArchive::new(file).unwrap();
     for i in 0..archive.len() {
         let mut file = archive.by_index(i).unwrap();
-        let outpath = Path::new(prepend_path).join(file.mangled_name());
+        let outpath = Path::new(prepend_path).join(file.mangled_name()?);
 
         {
             let comment = file.comment();
@@ -47,7 +47,7 @@ fn extract_zipfile(file_path: &str, prepend_path: &str) -> Result<(), Box<dyn st
             }
         }
 
-        if (*file.name()).ends_with('/') {
+        if file.name()?.ends_with('/') {
             println!("File {i} extracted to \"{}\"", outpath.as_path().display());
             fs::create_dir_all(&outpath).unwrap();
         } else {
@@ -167,7 +167,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .get_matches();
 
     // Gets a value for config if supplied by user, or defaults to "default.conf"
-    let output_dir = matches.value_of("OUTPUT_DIR").unwrap_or("./tmp");
+    let output_dir = matches
+        .get_one::<String>("output")
+        .map(String::as_str)
+        .unwrap_or("./tmp");
     println!("Value for output dir: {output_dir}");
 
     if path_exists(output_dir) {
